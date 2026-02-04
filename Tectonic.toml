@@ -1,0 +1,9 @@
+[doc]
+name = "cv"
+bundle = "https://data1.fullyjustified.net/tlextras-2022.0r0.tar"
+
+[[output]]
+name = "pdf"
+type = "pdf"
+synctex = true
+inputs = ["index.tex"]

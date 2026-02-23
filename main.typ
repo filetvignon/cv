@@ -21,7 +21,7 @@
   profession: "Software Engineer",
   bio: [
     Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.],
-  profile-picture: image("./images/profile_pic_example.jpg"), // provide a profile picture here
+  profile-picture: image("./images/pfp.jpeg", width: 100%), // provide a profile picture here
   aside: {
     section(
       "Contact",

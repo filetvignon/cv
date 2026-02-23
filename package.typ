@@ -7,9 +7,9 @@
   font-tertiary: "Montserrat",
   text-color: rgb("#3f454d"),
   gutter-size: 4em,
-  main-width: 6fr,
-  aside-width: 3fr,
-  profile-picture-width: 55%,
+  main-width: 2fr,
+  aside-width: 1fr,
+  profile-picture-width: 90%,
 )
 
 
@@ -133,6 +133,7 @@
 
 #let contact-entry(
   theme: (),
+  icon-padding: none,
   gutter,
   right,
 ) = {
@@ -142,14 +143,19 @@
   set text(size: theme.font-size) if "font-size" in theme
 
   grid(
+    // stroke: 0.1pt,
+    rows: 10pt,
+    columns: (auto, auto),
+    gutter: 5%,
     {
-      context {
-        set align(center) if not "align-gutter" in theme
-        set align(theme.align-gutter) if "align-gutter" in theme
+      set align(center + horizon)
         gutter
+      if icon-padding != none {
+        v(icon-padding)
       }
     },
     {
+      set align(start + horizon)
       right
     },
   )

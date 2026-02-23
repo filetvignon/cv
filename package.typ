@@ -341,6 +341,3 @@
   )
 }
 
-#let github-icon = image("images/github-brands.svg", alt: "github icon")
-#let phone-icon = image("images/phone-solid.svg", alt: "phone icon")
-#let email-icon = image("images/envelope-solid.svg", alt: "email icon")

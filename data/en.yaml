@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=../cv-data.schema.json
+
+# Personal information
+profile:
+  first-name: Felipe
+  last-name: Vignon
+  pfp: "./images/pfp.jpeg"
+  bio: >
+    Experienced software engineer with a passion for developing
+    innovative programs that expedite the efficiency and
+    effectiveness of organizational success
+  titles:
+    - Senior Software Engineer
+  location:
+    city: San Francisco
+    country: USA
+  contact:
+    - type: email
+      display: felipe.vignon@gmail.com
+      link: mailto:felipe.vignon@gmail.com
+      icon: envelope
+      # icon-padding: 1.3pt
+      icon-args:
+        solid: true
+    - type: phone
+      display: +55 11 971354176
+      link: tel:+5511971354176
+      icon: phone
+      # icon-padding: 1.8pt
+    - type: github
+      display: filetvignon
+      link: https://github.com/filetvignon
+      icon: github
+      # icon-padding: 2.1pt
+    - type: linkedin
+      display: felipevignon
+      link: https://linkedin.com/in/felipevignon
+      icon: linkedin
+      # icon-padding: 2pt
+      icon-args:
+        size: 9pt
+
+tech-stack:
+  - name: Node.js
+    rating: 5
+  - name: Python
+    rating: 3
+  - name: React
+    rating: 2
+
+languages:
+  - name: Portuguese
+    level: Native
+  - name: English
+    level: Fluent
+  - name: Spanish
+    level: Basic
+  - name: French
+    level: Basic
+
+interests:
+  - Open Source Contribution
+  - Tech Blogging
+  - Traveling
+
+work-experiences:
+  - organization: Tech Innovators Inc.
+    timeframe: Jan 2020 - Present
+    title: Senior Software Engineer
+    location: San Francisco, USA
+    description: >
+      Leading a team of developers to design and implement scalable web applications
+      using Node.js and React. Spearheaded the migration of legacy systems to modern
+      cloud-based solutions, resulting in a 30% increase in performance and a 20% reduction in costs. Mentored junior engineers and conducted code reviews to maintain
+
+      high-quality code standards. Collaborated with cross-functional teams to define project requirements and deliver innovative solutions that meet business needs. Key achievements include
+  - organization: Web Solutions Ltd.
+    title: Software Engineer
+    timeframe: Jun 2017 - Dec 2019
+    location: Remote
+    description: >
+      Contributed to the development of e-commerce platforms using Python and Django. Worked closely with product managers and designers to create user-friendly interfaces and optimize backend performance. Participated in the full software development lifecycle, from requirements gathering to deployment and maintenance. Key achievements include:
+
+      - Optimized database queries that reduced page load times by 15%, enhancing the user experience and increasing customer satisfaction.
+
+      - Developed a custom content management system that allowed clients to easily manage their online stores, resulting in a 20% increase in client retention.
+  - organization: Startup XYZ
+    title: Junior Software Engineer
+    timeframe: Jan 2015 - May 2017
+    location: São Paulo, Brazil
+    description: >
+      Assisted in the development of a mobile application using React Native. Collaborated with senior developers to implement new features and fix bugs. Gained experience in agile methodologies and version control systems. Key achievements include:
+
+      - Contributed to the successful launch of the mobile app, which garnered over 10,000 downloads within the first month.
+
+      - Implemented a user feedback system that allowed for continuous improvement of the app based on user suggestions and bug reports.
+  - organization: Freelance
+    title: Software Developer
+    timeframe: Jan 2013 - Dec 2014
+    location: São Paulo, Brazil
+    description: >
+      Developed custom software solutions for small businesses, including inventory management systems and customer relationship management (CRM) tools. Worked closely with clients to understand their needs and deliver tailored solutions that improved their operations. Key achievements include:
+
+      - Successfully delivered over 20 projects for various clients, resulting in increased efficiency and profitability for their businesses.
+
+      - Built strong client relationships that led to repeat business and referrals, contributing to the growth of my freelance career.
+
+education:
+  - institution: University of São Paulo
+    timeframe: 2010 - 2014
+    title: Bachelor of Science in Computer Science
+    description: Focused in software engineering, with coursework in algorithms, data structures.
+  - institution: Coursera
+    timeframe: 2018
+    title: Full-Stack Web Development with React Specialization
+    description: Completed a comprehensive specialization in full-stack web development, covering front-end and back-end technologies.

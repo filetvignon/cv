@@ -1,3 +1,5 @@
+#import "@preview/to-stuff:0.5.1" as to
+
 #let default-theme = (
   margin: 26pt,
   font: "Libre Baskerville",
@@ -12,11 +14,10 @@
   profile-picture-width: 90%,
 )
 
-
 #let resume(
   first-name: "",
   last-name: "",
-  profession: "",
+  titles: (),
   bio: "",
   profile-picture: none,
   theme: (),
@@ -78,7 +79,9 @@
         {
           show heading: set block(above: 10pt, below: 0pt)
           show heading: set text(weight: "light", font: th("font-tertiary"))
-          heading(level: 3, upper(profession))
+          for title in titles {
+            heading(level: 3, upper(title))
+          }
         }
 
         if profile-picture != none {
@@ -149,7 +152,7 @@
     gutter: 5%,
     {
       set align(center + horizon)
-        gutter
+      gutter
       if icon-padding != none {
         v(icon-padding)
       }
@@ -186,7 +189,7 @@
   title: "",
   organization: "",
   location: "",
-  body,
+  description: "",
 ) = {
   set text(size: theme.font-size) if "font-size" in theme
 
@@ -232,7 +235,7 @@
   context {
     set text(fill: text.fill.lighten(30%))
     set par(leading: 1em)
-    body
+    description
   }
 }
 
@@ -242,7 +245,7 @@
   title: "",
   institution: "",
   location: "",
-  body,
+  description: "",
 ) = {
   set text(size: theme.font-size) if "font-size" in theme
 
@@ -272,7 +275,7 @@
       spacing: 8pt,
       {
         set text(font: theme.font) if "font" in theme
-        body
+        description
       },
       {
         set text(font: theme.font-secondary) if "font-secondary" in theme
@@ -337,6 +340,10 @@
   set text(font: default-theme.font-secondary) if "font-secondary" not in theme
   set text(size: theme.font-size) if "font-size" in theme
 
+  if max-rating == none {
+    max-rating = 5
+  }
+
   stack(
     dir: ltr,
     tech,
@@ -346,4 +353,3 @@
     },
   )
 }
-

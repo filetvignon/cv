@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "default": {},
+  "title": "cv data schema",
+  "required": [
+    "profile",
+    "work-experiences",
+    "education"
+  ],
+  "properties": {
+    "profile": {
+      "type": "object",
+      "default": {},
+      "required": [
+        "first-name",
+        "last-name"
+      ],
+      "properties": {
+        "first-name": {
+          "type": "string",
+          "default": ""
+        },
+        "last-name": {
+          "type": "string",
+          "default": ""
+        },
+        "pfp": {
+          "type": "string",
+          "default": "./images/pfp.jpeg",
+          "description": "Path to the profile picture image file, from root of the project."
+        },
+        "titles": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          }
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "region": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "postalCode": {
+              "type": "string"
+            }
+          }
+        },
+        "contact": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "display",
+              "link"
+            ],
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "Field type (email, phone, linkedin etc)"
+              },
+              "display": {
+                "type": "string",
+                "description": "Display text for the contact field"
+              },
+              "link": {
+                "type": "string",
+                "description": "URL or link for the contact field"
+              },
+              "icon": {
+                "type": "string",
+                "description": "Icon for the contact field"
+              },
+              "icon-padding": {
+                "type": "string",
+                "description": "Padding for the icon. Useful for adjusting spacing between the icon and the display text"
+              },
+              "icon-args": {
+                "type": "object",
+                "properties": {
+                  "solid": {
+                    "type": "boolean",
+                    "description": "Font-awesome solid property"
+                  },
+                  "size": {
+                    "type": "string",
+                    "description": "Font-awesome size property"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "tech-stack": {
+      "type": "array",
+      "description": "List of technologies, tools, and skills to display in the tech stack section",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "rating"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the technology or skill"
+          },
+          "rating": {
+            "type": "integer",
+            "description": "Rating or proficiency level for the technology or skill"
+          }
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "description": "List of languages and their proficiency levels",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "level"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the language"
+          },
+          "level": {
+            "type": "string",
+            "description": "Level of proficiency for the language"
+          }
+        }
+      }
+    },
+    "interests": {
+      "type": "array",
+      "description": "List of interests and their proficiency levels",
+      "items": {
+        "type": "string"
+      }
+    },
+    "work-experiences": {
+      "type": "array",
+      "description": "List of work experiences",
+      "items": {
+        "type": "object",
+        "required": [
+          "organization",
+          "timeframe",
+          "title"
+        ],
+        "properties": {
+          "organization": {
+            "type": "string",
+            "description": "Name of the organization"
+          },
+          "timeframe": {
+            "type": "string",
+            "description": "Timeframe of the work experience"
+          },
+          "title": {
+            "type": "string",
+            "description": "Title or position held during the work experience"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the work experience"
+          },
+          "location": {
+            "type": "string",
+            "description": "Location of the work experience"
+          }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "description": "List of education experiences",
+      "items": {
+        "type": "object",
+        "required": [
+          "institution",
+          "timeframe",
+          "title"
+        ],
+        "properties": {
+          "institution": {
+            "type": "string",
+            "description": "Name of the institution"
+          },
+          "timeframe": {
+            "description": "Timeframe of the education experience",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "title": {
+            "type": "string",
+            "description": "Title or degree obtained during the education experience"
+          },
+          "description": {
+            "type": "string",
+            "description": "Description of the education experience"
+          },
+          "location": {
+            "type": "string",
+            "description": "Location of the education experience"
+          }
+        }
+      }
+    }
+  }
+}

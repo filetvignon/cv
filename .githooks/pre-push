@@ -1,0 +1,29 @@
+#!/bin/sh
+set -eu
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+if ! command -v typst >/dev/null 2>&1; then
+  echo "pre-push: typst command not found in PATH" >&2
+  exit 1
+fi
+
+echo "pre-push: compiling Typst CV..."
+./compile.sh
+
+echo "pre-push: staging generated build files..."
+git add build/
+
+# only check SVG files, since PDFs always show in the diff even if they are unchanged
+if git diff --cached --quiet -- build/svg; then
+  echo "pre-push: build/ files unchanged; nothing to amend"
+  # PDFs always show in the diff, even if they are unchanged, so we need to restore them
+  git restore --staged --worktree build/
+  exit 0
+fi
+
+echo "pre-push: amending latest commit with updated build/ files..."
+git commit --amend --no-edit
+echo "pre-push: latest commit updated. Please run git push again to push the amended commit."
+exit 1

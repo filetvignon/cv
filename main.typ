@@ -3,6 +3,7 @@
 #import "@preview/to-stuff:0.5.1" as to
 
 #let inputs = sys.inputs
+#let valid-langs = ("en", "pt")
 
 #let lang = if inputs != none and "lang" in inputs and inputs.lang != none {
   inputs.lang
@@ -10,10 +11,19 @@
   "en"
 }
 
+#if lang not in valid-langs {
+  panic("Invalid language: " + lang + ". Supported languages are: " + valid-langs.join(","))
+}
+
+#let translations-file = "i18n/" + lang + ".yaml"
+#let translations = yaml(translations-file)
+
+#let headers = translations.headers
+
 #let data-file = "data/" + lang + ".yaml"
 #let cv-data = yaml(data-file)
-#let profile = cv-data.profile
 
+#let profile = cv-data.profile
 
 // To learn about theming, see https://github.com/tsnobip/typst-typographic-resume?tab=readme-ov-file#theme
 // make sure you have installed the fonts you want to use
@@ -37,7 +47,7 @@
   profile-picture: image(profile.at("pfp", default: "./images/pfp.jpeg")), // provide a profile picture here
   aside: {
     section(
-      "Contact",
+      headers.contact,
       for contact in profile.contact {
         let icon-args = contact.at("icon-args", default: (:))
         if "size" in icon-args {
@@ -56,7 +66,7 @@
 
     if "tech-stack" in cv-data {
       section(
-        "Tech Stack",
+        headers.tech-stack,
         for tech in cv-data.tech-stack {
           tech-entry(tech.name, tech.rating)
         },
@@ -65,7 +75,7 @@
 
     if "languages" in cv-data {
       section(
-        "Languages",
+        headers.languages,
         for language in cv-data.languages {
           language-entry(language.name, language.level)
         },
@@ -74,7 +84,7 @@
 
     if "interests" in cv-data {
       section(
-        "Interests",
+        headers.interests,
         {
           set text(size: 7pt)
           stack(
@@ -91,7 +101,7 @@
   theme: (
     space-above: 0pt,
   ),
-  "Work Experiences",
+  headers.work-experiences,
   {
     let i = 0
     for work in cv-data.work-experiences {
@@ -112,7 +122,7 @@
 )
 
 #section(
-  "Education",
+  headers.education,
   grid(
     columns: 2,
     column-gutter: default-theme.margin,

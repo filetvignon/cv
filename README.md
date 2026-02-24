@@ -3,6 +3,12 @@
 <https://github.com/tsnobip/typst-typographic-resume>
 <https://github.com/roaldarbol/academicv>
 
-## Current
+## Previews
 
-![CV image](./main.svg)
+### English
+
+![CV - English](./build/svg/cv-en.svg)
+
+### Portuguese
+
+![CV - Portuguese](./build/svg/cv-pt.svg)

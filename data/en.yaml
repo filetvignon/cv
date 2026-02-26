@@ -6,14 +6,20 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Experienced software engineer with a passion for developing
-    innovative programs that expedite the efficiency and
-    effectiveness of organizational success
+    Developer with great interest in
+    the areas of technology, news and vegetarian cuisine.
+
+    Analytical, highly versatile and
+    with good sense of teamwork,
+    willing to learn and grow
+    within company, and always
+    eager to learn new
+    technologies on the market
   titles:
     - Senior Software Engineer
   location:
-    city: San Francisco
-    country: USA
+    city: São Paulo
+    country: Brazil
   contact:
     - type: email
       display: felipe.vignon@gmail.com
@@ -43,9 +49,39 @@ profile:
 tech-stack:
   - name: Node.js
     rating: 5
-  - name: Python
+  - name: Express.js
+    rating: 5
+  - name: Rest API
+    rating: 3
+  - name: Typescript
+    rating: 3
+  - name: MongoDB
+    rating: 3
+  - name: Docker
     rating: 3
   - name: React
+    rating: 3
+  - name: MarkLogic
+    rating: 3
+  - name: Apache NiFi
+    rating: 3
+  - name: MySQL
+    rating: 3
+  - name: Mocha/Jest/Sinon
+    rating: 3
+  - name: CI/CD
+    rating: 3
+  - name: VBA
+    rating: 3
+  - name: HTML/CSS
+    rating: 3
+  - name: Java
+    rating: 3
+  - name: C/C++
+    rating: 3
+  - name: Python
+    rating: 3
+  - name: Go
     rating: 2
 
 languages:
@@ -58,59 +94,81 @@ languages:
   - name: French
     level: Basic
 
-interests:
-  - Open Source Contribution
-  - Tech Blogging
-  - Traveling
+# interests:
+#   - Open Source Contribution
+#   - Tech Blogging
+#   - Traveling
 
 work-experiences:
-  - organization: Tech Innovators Inc.
-    timeframe: Jan 2020 - Present
-    title: Senior Software Engineer
-    location: San Francisco, USA
+  - organization: 4V Services
+    timeframe: 2022 - Present
+    title: Marklogic Developer
+    location: Pennsylvania, USA
+    remote: true
     description: >
-      Leading a team of developers to design and implement scalable web applications
-      using Node.js and React. Spearheaded the migration of legacy systems to modern
-      cloud-based solutions, resulting in a 30% increase in performance and a 20% reduction in costs. Mentored junior engineers and conducted code reviews to maintain
+      - Implement features and scripted tests to MarkLogic applications
 
-      high-quality code standards. Collaborated with cross-functional teams to define project requirements and deliver innovative solutions that meet business needs. Key achievements include
-  - organization: Web Solutions Ltd.
-    title: Software Engineer
-    timeframe: Jun 2017 - Dec 2019
-    location: Remote
+      - Create and manage NiFi flows to ingest data from multiple sources
+      in real time
+
+      - Develop a React app that integrates MarkLogic through Node.js
+  - organization: Powerschool
+    title: Backend Developer
+    timeframe: 2022
+    location: USA/Canada
+    remote: true
     description: >
-      Contributed to the development of e-commerce platforms using Python and Django. Worked closely with product managers and designers to create user-friendly interfaces and optimize backend performance. Participated in the full software development lifecycle, from requirements gathering to deployment and maintenance. Key achievements include:
+      - Maintenance and development of services that are shared across
+      different products
 
-      - Optimized database queries that reduced page load times by 15%, enhancing the user experience and increasing customer satisfaction.
+      - AWS serverless architecture written in typescript
 
-      - Developed a custom content management system that allowed clients to easily manage their online stores, resulting in a 20% increase in client retention.
-  - organization: Startup XYZ
-    title: Junior Software Engineer
-    timeframe: Jan 2015 - May 2017
+      - Extensive unit and integration testing
+  - organization: 100 Open Startups
+    title: Architect/Tech Lead (freelance)
+    timeframe: 2022
     location: São Paulo, Brazil
     description: >
-      Assisted in the development of a mobile application using React Native. Collaborated with senior developers to implement new features and fix bugs. Gained experience in agile methodologies and version control systems. Key achievements include:
+      - Create designs and specifications for developers to work on
 
-      - Contributed to the successful launch of the mobile app, which garnered over 10,000 downloads within the first month.
+      - Update Node.js and AWS systems
 
-      - Implemented a user feedback system that allowed for continuous improvement of the app based on user suggestions and bug reports.
-  - organization: Freelance
-    title: Software Developer
-    timeframe: Jan 2013 - Dec 2014
+      - Design and work on integrations with third-party systems
+  - organization: ACT Digital
+    title: Senior Backend Developer
+    timeframe: 2020 - 2022
     location: São Paulo, Brazil
     description: >
-      Developed custom software solutions for small businesses, including inventory management systems and customer relationship management (CRM) tools. Worked closely with clients to understand their needs and deliver tailored solutions that improved their operations. Key achievements include:
+      - As a technical leader, consolidate and align technical
+      implementations across backend and frontend teams
 
-      - Successfully delivered over 20 projects for various clients, resulting in increased efficiency and profitability for their businesses.
+      - Work alongside several different global teams
 
-      - Built strong client relationships that led to repeat business and referrals, contributing to the growth of my freelance career.
+      - Backend consisting of microservices in typescript
+
+      - Microsoft Azure - Service Apps, KeyVault, CosmosDB, Functions and
+      Service Bus (queues and topics)
+
+      - REST API design and implementation
+
+      - Design database models, Integrations with the client's backend
+  - organization: 100 Open Startups
+    title: Developer
+    timeframe: 2016 - 2020
+    location: São Paulo, Brazil
+    description: >
+      - NoSQL database structuring and maintenance
+
+      - Data analysis and filtering, raw data migration to database
+
+      - Server maintenance and backend system creation for app and site
 
 education:
   - institution: University of São Paulo
-    timeframe: 2010 - 2014
-    title: Bachelor of Science in Computer Science
+    timeframe: 2017
+    title: Bachelor of Science in Electrical Engineering
     description: Focused in software engineering, with coursework in algorithms, data structures.
-  - institution: Coursera
-    timeframe: 2018
-    title: Full-Stack Web Development with React Specialization
-    description: Completed a comprehensive specialization in full-stack web development, covering front-end and back-end technologies.
+  - institution: University of Toronto
+    timeframe: 2013
+    title: Exchange program in Electrical and Computer Engineering
+    description: Research on design and analysis of electronic filters

@@ -3,5 +3,8 @@ headers:
   tech-stack: Tech Stack
   languages: Languages
   interests: Interests
-  work-experiences: Work Experiences
+  work-experiences: Work Experience
   education: Education
+
+tags:
+  remote: Remote

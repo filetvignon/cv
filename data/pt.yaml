@@ -6,14 +6,22 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software experiente, com paixão por desenvolver
-    programas inovadores que aceleram a eficiência e
-    a efetividade do sucesso organizacional
+    Desenvolvedor com grande interesse
+    nas áreas de tecnologia, política,
+    notícias e culinária vegetariana.
+
+
+    Analítico, altamente versátil
+    e com bom senso de trabalho em equipe,
+    disposto a aprender e crescer
+    dentro da empresa, e sempre
+    com vontade de aprender novas
+    tecnologias do mercado
   titles:
-    - Engenheiro de software sênior
+    - Engenheiro de Software Sênior
   location:
-    city: San Francisco
-    country: EUA
+    city: São Paulo
+    country: Brasil
   contact:
     - type: email
       display: felipe.vignon@gmail.com
@@ -43,9 +51,39 @@ profile:
 tech-stack:
   - name: Node.js
     rating: 5
-  - name: Python
+  - name: Express.js
+    rating: 5
+  - name: API REST
+    rating: 3
+  - name: TypeScript
+    rating: 3
+  - name: MongoDB
+    rating: 3
+  - name: Docker
     rating: 3
   - name: React
+    rating: 3
+  - name: MarkLogic
+    rating: 3
+  - name: Apache NiFi
+    rating: 3
+  - name: MySQL
+    rating: 3
+  - name: Mocha/Jest/Sinon
+    rating: 3
+  - name: CI/CD
+    rating: 3
+  - name: VBA
+    rating: 3
+  - name: HTML/CSS
+    rating: 3
+  - name: Java
+    rating: 3
+  - name: C/C++
+    rating: 3
+  - name: Python
+    rating: 3
+  - name: Go
     rating: 2
 
 languages:
@@ -58,59 +96,83 @@ languages:
   - name: Francês
     level: Básico
 
-interests:
-  - Contribuição em código aberto
-  - Escrita sobre tecnologia
-  - Viagens
+# interests:
+#   - Contribuição para código aberto
+#   - Escrita sobre tecnologia
+#   - Viagens
 
 work-experiences:
-  - organization: Tech Innovators Inc.
-    timeframe: Jan 2020 - Atual
-    title: Engenheiro de software sênior
-    location: San Francisco, EUA
+  - organization: 4V Services
+    timeframe: 2022 - Presente
+    title: Desenvolvedor MarkLogic
+    location: Pennsylvania, EUA
+    remote: true
     description: >
-      Liderando uma equipe de desenvolvedores para projetar e implementar aplicações web escaláveis
-      usando Node.js e React. Liderei a migração de sistemas legados para soluções modernas
-      baseadas em nuvem, resultando em um aumento de 30% no desempenho e uma redução de 20% nos custos. Mentorei engenheiros juniores e conduzi revisões de código para manter
+      - Implementar funcionalidades e testes automatizados em aplicações MarkLogic
 
-      altos padrões de qualidade de código. Colaborei com equipes multidisciplinares para definir requisitos de projeto e entregar soluções inovadoras que atendem às necessidades do negócio. As principais conquistas incluem
-  - organization: Web Solutions Ltd.
-    title: Engenheiro de software
-    timeframe: Jun 2017 - Dez 2019
-    location: Remoto
+      - Criar e gerenciar fluxos no NiFi para ingestão de dados de múltiplas fontes
+      em tempo real
+
+      - Desenvolver uma aplicação React que integra MarkLogic por meio de Node.js
+  - organization: Powerschool
+    title: Desenvolvedor Backend
+    timeframe: 2022
+    location: EUA/Canadá
+    remote: true
     description: >
-      Contribuí para o desenvolvimento de plataformas de e-commerce usando Python e Django. Trabalhei de perto com gerentes de produto e designers para criar interfaces amigáveis e otimizar o desempenho do backend. Participei de todo o ciclo de vida de desenvolvimento de software, do levantamento de requisitos à implantação e manutenção. As principais conquistas incluem:
+      - Manutenção e desenvolvimento de serviços compartilhados entre
+      diferentes produtos
 
-      - Otimizei consultas ao banco de dados que reduziram o tempo de carregamento das páginas em 15%, melhorando a experiência do usuário e aumentando a satisfação dos clientes.
+      - Arquitetura serverless na AWS escrita em TypeScript
 
-      - Desenvolvi um sistema de gerenciamento de conteúdo personalizado que permitiu aos clientes gerenciar suas lojas online com facilidade, resultando em um aumento de 20% na retenção de clientes.
-  - organization: Startup XYZ
-    title: Engenheiro de software júnior
-    timeframe: Jan 2015 - Mai 2017
+      - Testes unitários e de integração extensivos
+
+  - organization: 100 Open Startups
+    title: Arquiteto/Líder Técnico (freelance)
+    timeframe: 2022
     location: São Paulo, Brasil
     description: >
-      Auxiliei no desenvolvimento de um aplicativo móvel usando React Native. Colaborei com desenvolvedores seniores para implementar novos recursos e corrigir bugs. Adquiri experiência em metodologias ágeis e sistemas de controle de versão. As principais conquistas incluem:
+      - Criar designs e especificações para orientar o trabalho dos desenvolvedores
 
-      - Contribuí para o lançamento bem-sucedido do aplicativo móvel, que alcançou mais de 10.000 downloads no primeiro mês.
+      - Atualizar sistemas em Node.js e AWS
 
-      - Implementei um sistema de feedback de usuários que permitiu a melhoria contínua do aplicativo com base em sugestões e relatos de bugs.
-  - organization: Freelance
-    title: Desenvolvedor de software
-    timeframe: Jan 2013 - Dez 2014
+      - Desenhar e implementar integrações com sistemas de terceiros
+  - organization: ACT Digital
+    title: Desenvolvedor Backend Sênior
+    timeframe: 2020 - 2022
     location: São Paulo, Brasil
     description: >
-      Desenvolvi soluções de software personalizadas para pequenas empresas, incluindo sistemas de gestão de estoque e ferramentas de gestão de relacionamento com clientes (CRM). Trabalhei de perto com clientes para entender suas necessidades e entregar soluções sob medida que melhoraram suas operações. As principais conquistas incluem:
+      - Como líder técnico, consolidar e alinhar implementações
+      técnicas entre as equipes de backend e frontend
 
-      - Entreguei com sucesso mais de 20 projetos para diversos clientes, resultando em aumento de eficiência e lucratividade para seus negócios.
+      - Trabalhar em conjunto com diversas equipes globais
 
-      - Construí relacionamentos sólidos com clientes, gerando recorrência e indicações, o que contribuiu para o crescimento da minha carreira como freelancer.
+      - Backend composto por microsserviços em TypeScript
+
+      - Microsoft Azure - Service Apps, KeyVault, CosmosDB, Functions e
+      Service Bus (filas e tópicos)
+
+      - Design e implementação de APIs REST
+
+      - Modelagem de banco de dados e integrações com o backend do cliente
+  - organization: 100 Open Startups
+    title: Desenvolvedor
+    timeframe: 2016 - 2020
+    location: São Paulo, Brasil
+    description: >
+
+      - Estruturação e manutenção de banco de dados NoSQL
+
+      - Análise e filtragem de dados, migração de dados brutos para banco
+
+      - Manutenção de servidores e criação de sistemas backend para app e site
 
 education:
   - institution: University of São Paulo
-    timeframe: 2010 - 2014
-    title: Bacharelado em Ciência da Computação
+    timeframe: 2017
+    title: Bacharelado em Engenharia Elétrica
     description: Foco em engenharia de software, com disciplinas de algoritmos e estruturas de dados.
-  - institution: Coursera
-    timeframe: 2018
-    title: Especialização em Desenvolvimento Web Full-Stack com React
-    description: Concluí uma especialização abrangente em desenvolvimento web full-stack, cobrindo tecnologias de front-end e back-end.
+  - institution: University of Toronto
+    timeframe: 2013
+    title: Programa de intercâmbio em Engenharia Elétrica
+    description: Pesquisa em projeto e análise de filtros eletrônicos

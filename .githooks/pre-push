@@ -25,5 +25,5 @@ fi
 
 echo "pre-push: amending latest commit with updated build/ files..."
 git commit --amend --no-edit
-echo "pre-push: latest commit updated. Please run git push again to push the amended commit."
+echo >&2 "pre-push: latest commit updated. Please run git push again to push the amended commit."
 exit 1

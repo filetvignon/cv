@@ -167,7 +167,14 @@
             "description": "Name of the organization"
           },
           "timeframe": {
-            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
             "description": "Timeframe of the work experience"
           },
           "title": {
@@ -181,6 +188,10 @@
           "location": {
             "type": "string",
             "description": "Location of the work experience"
+          },
+          "remote": {
+            "type": "boolean",
+            "description": "Whether the work experience was remote or not"
           }
         }
       }

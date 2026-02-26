@@ -2,28 +2,22 @@
 #import "@preview/fontawesome:0.6.0": *
 #import "@preview/to-stuff:0.5.1" as to
 
-#let inputs = sys.inputs
-#let valid-langs = ("en", "pt")
-
-#let lang = if inputs != none and "lang" in inputs and inputs.lang != none {
-  inputs.lang
-} else {
-  "en"
-}
-
-#if lang not in valid-langs {
-  panic("Invalid language: " + lang + ". Supported languages are: " + valid-langs.join(","))
-}
-
-#let translations-file = "i18n/" + lang + ".yaml"
-#let translations = yaml(translations-file)
-
-#let headers = translations.headers
+#let headers = translate("headers")
 
 #let data-file = "data/" + lang + ".yaml"
 #let cv-data = yaml(data-file)
 
 #let profile = cv-data.profile
+
+#set document(
+  title: profile.at("first-name", default: "") + " " + profile.at("last-name", default: ""),
+  description: "Curriculum Vitae of "
+    + profile.at("first-name", default: "")
+    + " "
+    + profile.at("last-name", default: ""),
+)
+
+#set text(lang: lang)
 
 // To learn about theming, see https://github.com/tsnobip/typst-typographic-resume?tab=readme-ov-file#theme
 // make sure you have installed the fonts you want to use

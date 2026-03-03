@@ -418,3 +418,12 @@
     },
   )
 }
+
+#let sort-by-rating(input) = {
+  return input.sorted(by: (a, b) => {
+    if (a.rating == b.rating) {
+      return a.name <= b.name
+    }
+    return a.rating >= b.rating
+  })
+}

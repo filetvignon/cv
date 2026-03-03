@@ -38,7 +38,7 @@
   last-name: profile.at("last-name", default: ""),
   titles: profile.at("titles", default: ()),
   bio: profile.at("bio", default: ""),
-  profile-picture: image(profile.at("pfp", default: "./images/pfp.jpeg")), // provide a profile picture here
+  // profile-picture: image(profile.at("pfp", default: "./images/pfp.jpeg")), // provide a profile picture here
   aside: {
     section(
       headers.contact,
@@ -61,8 +61,26 @@
     if "tech-stack" in cv-data {
       section(
         headers.tech-stack,
-        for tech in cv-data.tech-stack {
+        for tech in sort-by-rating(cv-data.tech-stack) {
           tech-entry(tech.name, tech.rating)
+        },
+      )
+    }
+
+    if "databases" in cv-data {
+      section(
+        headers.databases,
+        for db in sort-by-rating(cv-data.databases) {
+          tech-entry(db.name, db.rating)
+        },
+      )
+    }
+
+    if "frameworks" in cv-data {
+      section(
+        headers.frameworks,
+        for framework in sort-by-rating(cv-data.frameworks) {
+          tech-entry(framework.name, framework.rating)
         },
       )
     }

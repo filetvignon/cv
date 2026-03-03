@@ -6,15 +6,9 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Developer with great interest in
-    the areas of technology, news and vegetarian cuisine.
-
-    Analytical, highly versatile and
-    with good sense of teamwork,
-    willing to learn and grow
-    within company, and always
-    eager to learn new
-    technologies on the market
+    Senior Software Engineer specializing in backend development (Node.js, Python).
+    Analytical, self-driven and team-oriented, dedicated to robust,
+    scalable architecture and continuous learning
   titles:
     - Senior Software Engineer
   location:
@@ -34,12 +28,12 @@ profile:
       icon: phone
       # icon-padding: 1.8pt
     - type: github
-      display: filetvignon
+      display: github.com/filetvignon
       link: https://github.com/filetvignon
       icon: github
       # icon-padding: 2.1pt
     - type: linkedin
-      display: felipevignon
+      display: linkedin.com/in/felipevignon
       link: https://linkedin.com/in/felipevignon
       icon: linkedin
       # icon-padding: 2pt
@@ -49,40 +43,50 @@ profile:
 tech-stack:
   - name: Node.js
     rating: 5
-  - name: Express.js
-    rating: 5
   - name: Rest API
-    rating: 3
+    rating: 5
   - name: Typescript
-    rating: 3
-  - name: MongoDB
-    rating: 3
+    rating: 4
   - name: Docker
-    rating: 3
-  - name: React
-    rating: 3
-  - name: MarkLogic
-    rating: 3
-  - name: Apache NiFi
-    rating: 3
-  - name: MySQL
-    rating: 3
-  - name: Mocha/Jest/Sinon
+    rating: 4
+  - name: Python
     rating: 3
   - name: CI/CD
     rating: 3
-  - name: VBA
+  - name: Shell scripting
     rating: 3
   - name: HTML/CSS
-    rating: 3
-  - name: Java
-    rating: 3
-  - name: C/C++
-    rating: 3
-  - name: Python
-    rating: 3
-  - name: Go
     rating: 2
+  - name: C/C++
+    rating: 2
+  - name: Go
+    rating: 1
+  - name: Java
+    rating: 1
+  - name: VBA
+    rating: 1
+
+databases:
+  - name: MarkLogic
+    rating: 4
+  - name: MongoDB
+    rating: 4
+  - name: CosmosDB
+    rating: 3
+  - name: MySQL
+    rating: 2
+
+frameworks:
+  - name: Express.js
+    rating: 5
+  - name: Fast API
+    rating: 4
+  - name: React
+    rating: 3
+  - name: Flutter
+    rating: 2
+  - name: Apache NiFi
+    rating: 4
 
 languages:
   - name: Portuguese
@@ -101,32 +105,49 @@ languages:
 
 work-experiences:
   - organization: 4V Services
-    timeframe: 2022 - Present
+    timeframe: November 2022 - February 2026
     title: Marklogic Developer
-    location: Pennsylvania, USA
+    location: USA
     remote: true
     description: >
       - Implement features and scripted tests to MarkLogic applications
 
+      - Create backend APIs in Node.js and Python to integrate with MarkLogic
+
       - Create and manage NiFi flows to ingest data from multiple sources
       in real time
 
-      - Develop a React app that integrates MarkLogic through Node.js
+      - Integrate applications through APIs and Azure Functions
+
+      - Develop React apps that integrates MarkLogic through a backend API
+
+      - Update older apps with newer versions of the tech stack
+  - organization: Twiage
+    title: Freelance Backend Developer
+    timeframe: May 2022 - August 2022
+    location: USA
+    remote: true
+    description: >
+      - Maintenance and development of a microservices architecture in Node.js
+
+      - Update React elements
+
+      - Update packages and dependencies
   - organization: Powerschool
-    title: Backend Developer
-    timeframe: 2022
+    title: Freelance Backend Developer
+    timeframe: March 2022 - June 2022
     location: USA/Canada
     remote: true
     description: >
       - Maintenance and development of services that are shared across
       different products
 
-      - AWS serverless architecture written in typescript
+      - AWS serverless architecture written in TypeScript
 
       - Extensive unit and integration testing
   - organization: 100 Open Startups
-    title: Architect/Tech Lead (freelance)
-    timeframe: 2022
+    title: Freelance  Architect/Tech Lead
+    timeframe: March 2022 - October 2022
     location: São Paulo, Brazil
     description: >
       - Create designs and specifications for developers to work on
@@ -136,7 +157,7 @@ work-experiences:
       - Design and work on integrations with third-party systems
   - organization: ACT Digital
     title: Senior Backend Developer
-    timeframe: 2020 - 2022
+    timeframe: April 2020 - February 2022
     location: São Paulo, Brazil
     description: >
       - As a technical leader, consolidate and align technical
@@ -154,10 +175,10 @@ work-experiences:
       - Design database models, Integrations with the client's backend
   - organization: 100 Open Startups
     title: Developer
-    timeframe: 2016 - 2020
-    location: São Paulo, Brazil
+    timeframe: September 2016 - April 2020
+    location: Sao Paulo, Brazil
     description: >
-      - NoSQL database structuring and maintenance
+      - MongoDB database structuring and maintenance
 
       - Data analysis and filtering, raw data migration to database
 
@@ -166,8 +187,8 @@ work-experiences:
 education:
   - institution: University of São Paulo
     timeframe: 2017
-    title: Bachelor of Science in Electrical Engineering
-    description: Focused in software engineering, with coursework in algorithms, data structures.
+    title: Bachelor Degree in Electrical Engineering
+    description: Focused in software engineering, with coursework in algorithms and data structures.
   - institution: University of Toronto
     timeframe: 2013
     title: Exchange program in Electrical and Computer Engineering

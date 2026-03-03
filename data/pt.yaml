@@ -6,17 +6,9 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Desenvolvedor com grande interesse
-    nas áreas de tecnologia, política,
-    notícias e culinária vegetariana.
-
-
-    Analítico, altamente versátil
-    e com bom senso de trabalho em equipe,
-    disposto a aprender e crescer
-    dentro da empresa, e sempre
-    com vontade de aprender novas
-    tecnologias do mercado
+    Engenheiro de Software Sênior especializado em desenvolvimento
+    backend (Node.js, Python). Analítico, proativo e orientado ao trabalho em equipe,
+    com dedicação à criação de uma arquitetura robusta, escalável e em constante aprendizado
   titles:
     - Engenheiro de Software Sênior
   location:
@@ -36,12 +28,12 @@ profile:
       icon: phone
       # icon-padding: 1.8pt
     - type: github
-      display: filetvignon
+      display: github.com/filetvignon
       link: https://github.com/filetvignon
       icon: github
       # icon-padding: 2.1pt
     - type: linkedin
-      display: felipevignon
+      display: linkedin.com/in/felipevignon
       link: https://linkedin.com/in/felipevignon
       icon: linkedin
       # icon-padding: 2pt
@@ -51,40 +43,50 @@ profile:
 tech-stack:
   - name: Node.js
     rating: 5
-  - name: Express.js
+  - name: Rest API
     rating: 5
-  - name: API REST
-    rating: 3
-  - name: TypeScript
-    rating: 3
-  - name: MongoDB
-    rating: 3
+  - name: Typescript
+    rating: 4
   - name: Docker
-    rating: 3
-  - name: React
-    rating: 3
-  - name: MarkLogic
-    rating: 3
-  - name: Apache NiFi
-    rating: 3
-  - name: MySQL
-    rating: 3
-  - name: Mocha/Jest/Sinon
+    rating: 4
+  - name: Python
     rating: 3
   - name: CI/CD
     rating: 3
-  - name: VBA
+  - name: Shell scripting
     rating: 3
   - name: HTML/CSS
-    rating: 3
-  - name: Java
-    rating: 3
-  - name: C/C++
-    rating: 3
-  - name: Python
-    rating: 3
-  - name: Go
     rating: 2
+  - name: C/C++
+    rating: 2
+  - name: Go
+    rating: 1
+  - name: Java
+    rating: 1
+  - name: VBA
+    rating: 1
+
+databases:
+  - name: MarkLogic
+    rating: 4
+  - name: MongoDB
+    rating: 4
+  - name: CosmosDB
+    rating: 3
+  - name: MySQL
+    rating: 2
+
+frameworks:
+  - name: Express.js
+    rating: 5
+  - name: Fast API
+    rating: 4
+  - name: React
+    rating: 3
+  - name: Flutter
+    rating: 2
+  - name: Apache NiFi
+    rating: 4
 
 languages:
   - name: Português
@@ -97,49 +99,65 @@ languages:
     level: Básico
 
 # interests:
-#   - Contribuição para código aberto
+#   - Contribuição em código aberto
 #   - Escrita sobre tecnologia
 #   - Viagens
 
 work-experiences:
   - organization: 4V Services
-    timeframe: 2022 - Presente
+    timeframe: Novembro 2022 - Fevereiro 2026
     title: Desenvolvedor MarkLogic
-    location: Pennsylvania, EUA
+    location: EUA
     remote: true
     description: >
       - Implementar funcionalidades e testes automatizados em aplicações MarkLogic
 
-      - Criar e gerenciar fluxos no NiFi para ingestão de dados de múltiplas fontes
+      - Criar APIs de backend em Node.js e Python para integração com MarkLogic
+
+      - Criar e gerenciar fluxos em NiFi para ingestão de dados de múltiplas fontes
       em tempo real
 
-      - Desenvolver uma aplicação React que integra MarkLogic por meio de Node.js
+      - Integrar aplicações através de APIs e Azure Functions
+
+      - Desenvolver aplicações React que se integram ao MarkLogic através de uma API backend
+
+      - Atualizar aplicações antigas para versões recentes das tecnologias usadas
+  - organization: Twiage
+    title: Desenvolvedor Backend Freelancer
+    timeframe: Maio 2022 - Agosto 2022
+    location: EUA
+    remote: true
+    description: >
+      - Manutenção e desenvolvimento de uma arquitetura de microsserviços em Node.js
+
+      - Atualizar elementos de React
+
+      - Atualizar pacotes e dependências
   - organization: Powerschool
-    title: Desenvolvedor Backend
-    timeframe: 2022
+    title: Desenvolvedor Backend Freelancer
+    timeframe: Março 2022 - Junho 2022
     location: EUA/Canadá
     remote: true
     description: >
-      - Manutenção e desenvolvimento de serviços compartilhados entre
+      - Manutenção e desenvolvimento de serviços para serem compartilhados entre
       diferentes produtos
 
-      - Arquitetura serverless na AWS escrita em TypeScript
+      - Arquitetura serverless na AWS desenvolvida em TypeScript
 
       - Testes unitários e de integração extensivos
-
   - organization: 100 Open Startups
-    title: Arquiteto/Líder Técnico (freelance)
-    timeframe: 2022
+    title: Arquiteto/Líder Técnico Freelancer
+    timeframe: Março 2022 - Outubro 2022
     location: São Paulo, Brasil
     description: >
       - Criar designs e especificações para orientar o trabalho dos desenvolvedores
 
-      - Atualizar sistemas em Node.js e AWS
+      - Atualizar sistemas em Node.js e na AWS
 
-      - Desenhar e implementar integrações com sistemas de terceiros
+      - Projetar e implementar integrações com sistemas de terceiros
   - organization: ACT Digital
     title: Desenvolvedor Backend Sênior
-    timeframe: 2020 - 2022
+    timeframe: Abril 2020 - Fevereiro 2022
     location: São Paulo, Brasil
     description: >
       - Como líder técnico, consolidar e alinhar implementações
@@ -157,13 +175,12 @@ work-experiences:
       - Modelagem de banco de dados e integrações com o backend do cliente
   - organization: 100 Open Startups
     title: Desenvolvedor
-    timeframe: 2016 - 2020
+    timeframe: Setembro 2016 - Abril 2020
     location: São Paulo, Brasil
     description: >
+      - Estruturação e manutenção de banco de dados MongoDB
 
-      - Estruturação e manutenção de banco de dados NoSQL
-
-      - Análise e filtragem de dados, migração de dados brutos para banco
+      - Análise e filtragem de dados, migração de dados brutos para o banco de dados
 
       - Manutenção de servidores e criação de sistemas backend para app e site
 
@@ -174,5 +191,5 @@ education:
     description: Foco em engenharia de software, com disciplinas de algoritmos e estruturas de dados.
   - institution: University of Toronto
     timeframe: 2013
-    title: Programa de intercâmbio em Engenharia Elétrica
+    title: Intercâmbio em Engenharia Elétrica e de Computação
     description: Pesquisa em projeto e análise de filtros eletrônicos

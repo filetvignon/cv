@@ -117,6 +117,8 @@ work-experiences:
       - Create and manage NiFi flows to ingest data from multiple sources
       in real time
 
+      - Implement generative AI integration
+
       - Integrate applications through APIs and Azure Functions
 
       - Develop React apps that integrates MarkLogic through a backend API

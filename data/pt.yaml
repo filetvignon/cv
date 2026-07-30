@@ -14,87 +14,12 @@ profile:
   location:
     city: São Paulo
     country: Brasil
-  contact:
-    - type: email
-      display: felipe.vignon@gmail.com
-      link: mailto:felipe.vignon@gmail.com
-      icon: envelope
-      # icon-padding: 1.3pt
-      icon-args:
-        solid: true
-    - type: phone
-      display: +55 11 971354176
-      link: tel:+5511971354176
-      icon: phone
-      # icon-padding: 1.8pt
-    - type: github
-      display: github.com/filetvignon
-      link: https://github.com/filetvignon
-      icon: github
-      # icon-padding: 2.1pt
-    - type: linkedin
-      display: linkedin.com/in/felipevignon
-      link: https://linkedin.com/in/felipevignon
-      icon: linkedin
-      # icon-padding: 2pt
-      icon-args:
-        size: 9pt
-
-tech-stack:
-  - name: Node.js
-    rating: 5
-  - name: Rest API
-    rating: 5
-  - name: Typescript
-    rating: 4
-  - name: Docker
-    rating: 4
-  - name: Python
-    rating: 3
-  - name: CI/CD
-    rating: 3
-  - name: Shell scripting
-    rating: 3
-  - name: HTML/CSS
-    rating: 2
-  - name: C/C++
-    rating: 2
-  - name: Go
-    rating: 1
-  - name: Java
-    rating: 1
-  - name: VBA
-    rating: 1
-
-databases:
-  - name: MarkLogic
-    rating: 4
-  - name: MongoDB
-    rating: 4
-  - name: CosmosDB
-    rating: 3
-  - name: MySQL
-    rating: 2
-
-frameworks:
-  - name: Express.js
-    rating: 5
-  - name: Fast API
-    rating: 4
-  - name: React
-    rating: 3
-  - name: Flutter
-    rating: 2
-  - name: Apache NiFi
-    rating: 4
 
 languages:
   - name: Português
     level: Nativo
   - name: Inglês
     level: Fluente
-  - name: Espanhol
-    level: Básico
   - name: Francês
     level: Básico
 
@@ -105,7 +30,13 @@ languages:
 
 work-experiences:
   - organization: 4V Services
-    timeframe: Novembro 2022 - Fevereiro 2026
+    timeframe: Novembro 2022 - Março 2026
+    start-date:
+      year: 2022
+      month: 11
+    end-date:
+      year: 2026
+      month: 3
     title: Desenvolvedor MarkLogic
     location: EUA
     remote: true
@@ -129,6 +60,12 @@ work-experiences:
   - organization: Twiage
     title: Desenvolvedor Backend Freelancer
     timeframe: Maio 2022 - Agosto 2022
+    start-date:
+      year: 2022
+      month: 5
+    end-date:
+      year: 2022
+      month: 8
     location: EUA
     remote: true
     description: >
@@ -140,6 +77,12 @@ work-experiences:
   - organization: Powerschool
     title: Desenvolvedor Backend Freelancer
     timeframe: Março 2022 - Junho 2022
+    start-date:
+      year: 2022
+      month: 3
+    end-date:
+      year: 2022
+      month: 6
     location: EUA/Canadá
     remote: true
     description: >
@@ -152,6 +95,12 @@ work-experiences:
   - organization: 100 Open Startups
     title: Arquiteto/Líder Técnico Freelancer
     timeframe: Março 2022 - Outubro 2022
+    start-date:
+      year: 2022
+      month: 3
+    end-date:
+      year: 2022
+      month: 10
     location: São Paulo, Brasil
     description: >
       - Criar designs e especificações para orientar o trabalho dos desenvolvedores
@@ -159,15 +108,40 @@ work-experiences:
       - Atualizar sistemas em Node.js e na AWS
 
       - Projetar e implementar integrações com sistemas de terceiros
+  - organization: 100 Open Startups
+    title: Desenvolvedor Backend
+    timeframe: Setembro 2016 - Abril 2020
+    start-date:
+      year: 2016
+      month: 9
+    end-date:
+      year: 2020
+      month: 4
+    location: São Paulo, Brasil
+    description: >
+      - Estruturação e manutenção de banco de dados MongoDB
+
+      - Análise e filtragem de dados, migração de dados brutos para o banco de dados
+
+      - Manutenção de servidores e criação de sistemas backend para app e site
+
+      - Trabalhei com Java
+
   - organization: ACT Digital
     title: Desenvolvedor Backend Sênior
     timeframe: Abril 2020 - Fevereiro 2022
+    start-date:
+      year: 2020
+      month: 4
+    end-date:
+      year: 2022
+      month: 2
     location: São Paulo, Brasil
     description: >
       - Como líder técnico, consolidar e alinhar implementações
       técnicas entre as equipes de backend e frontend
 
-      - Trabalhar com diferentes clients, em conjunto com diversas equipes globais em diferentes fusos horários
+      - Trabalhar com diferentes clientes, em conjunto com diversas equipes globais em diferentes fusos horários
 
       - Backend composto por microsserviços em TypeScript
 
@@ -179,23 +153,28 @@ work-experiences:
       - Modelagem de banco de dados e integrações com o backend do cliente
 
       - Trabalhar com uma equipe global multicultural em diferentes fusos horários
-  - organization: 100 Open Startups
-    title: Desenvolvedor
-    timeframe: Setembro 2016 - Abril 2020
-    location: São Paulo, Brasil
-    description: >
-      - Estruturação e manutenção de banco de dados MongoDB
-
-      - Análise e filtragem de dados, migração de dados brutos para o banco de dados
-
-      - Manutenção de servidores e criação de sistemas backend para app e site
-
 education:
-  - institution: University of São Paulo
+  - institution: Universidade de São Paulo
+    location: São Paulo, Brasil
     timeframe: 2017
+    start-date:
+      year: 2010
+      month: 2
+    end-date:
+      year: 2017
+      month: 12
     title: Bacharelado em Engenharia Elétrica
-    description: Foco em engenharia de software, com disciplinas de algoritmos e estruturas de dados.
+    description: >
+      - Foco em engenharia de software, com disciplinas de algoritmos e estruturas de dados.
   - institution: University of Toronto
+    location: Toronto, Canadá
     timeframe: 2013
+    start-date:
+      year: 2013
+      month: 1
+    end-date:
+      year: 2013
+      month: 12
     title: Intercâmbio em Engenharia Elétrica e de Computação
-    description: Pesquisa em projeto e análise de filtros eletrônicos
+    description: >
+      - Pesquisa em projeto e análise de filtros eletrônicos

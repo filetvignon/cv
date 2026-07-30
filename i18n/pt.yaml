@@ -7,6 +7,15 @@ headers:
   interests: Interesses
   work-experiences: Experiência Profissional
   education: Educação
+  skills: Habilidades Técnicas
+  bio: Sobre
 
 tags:
   remote: Remoto
+  present: Presente
+
+skills:
+  core: Principais
+  databases: Bancos de Dados
+  infrastructure: Infraestrutura
+  familiar: Familiar

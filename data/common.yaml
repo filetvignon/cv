@@ -1,0 +1,107 @@
+contact:
+  - type: email
+    display: felipe.vignon@gmail.com
+    link: mailto:felipe.vignon@gmail.com
+    icon: envelope
+    handle: felipe.vignon@gmail.com
+    # icon-padding: 1.3pt
+    icon-args:
+      solid: true
+  - type: phone
+    display: +55 11 971354176
+    link: tel:+5511971354176
+    icon: phone
+    handle: +55 11 971354176
+    # icon-padding: 1.8pt
+  - type: github
+    display: github.com/filetvignon
+    link: https://github.com/filetvignon
+    icon: github
+    handle: filetvignon
+    # icon-padding: 2.1pt
+  - type: linkedin
+    display: linkedin.com/in/felipevignon
+    link: https://linkedin.com/in/felipevignon
+    icon: linkedin
+    handle: felipevignon
+    # icon-padding: 2pt
+    icon-args:
+      size: 9pt
+
+tech-stack:
+  - name: Node.js
+    rating: 5
+  - name: Rest API
+    rating: 5
+  - name: Typescript
+    rating: 4
+  - name: Docker
+    rating: 4
+  - name: Python
+    rating: 3
+  - name: CI/CD
+    rating: 3
+  - name: Shell scripting
+    rating: 3
+  - name: HTML/CSS
+    rating: 2
+  - name: C/C++
+    rating: 2
+  - name: Go
+    rating: 1
+  - name: Java
+    rating: 1
+  - name: VBA
+    rating: 1
+
+databases:
+  - name: MarkLogic
+    rating: 4
+  - name: MongoDB
+    rating: 4
+  - name: CosmosDB
+    rating: 3
+  - name: MySQL
+    rating: 2
+
+frameworks:
+  - name: Express.js
+    rating: 5
+  - name: Fast API
+    rating: 4
+  - name: React
+    rating: 3
+  - name: Flutter
+    rating: 2
+  - name: Apache NiFi
+    rating: 4
+
+skills:
+  core:
+    - Node.js
+    - Python
+    - Fast API
+    - Typescript
+    - REST API
+    - Shell scripting
+  databases:
+    - MongoDB
+    - MarkLogic
+    - CosmosDB
+    - MySQL
+  infrastructure:
+    - Docker
+    - Microsoft Azure
+    - AWS
+    - Apache NiFi
+    - CI/CD
+  familiar:
+    - React
+    - Flutter
+    - Go
+    - C/C++
+    - Java
+    - VBA
+    - HTML/CSS
+    - Microservices
+    - Serverless architecture

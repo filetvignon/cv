@@ -177,6 +177,14 @@
             ],
             "description": "Timeframe of the work experience"
           },
+          "start-date": {
+            "description": "Start date of the work experience in the format YYYY-MM-DD or an object with year, month, and day properties",
+            "$ref": "#/$defs/datetime"
+          },
+          "end-date": {
+            "description": "End date of the work experience in the format YYYY-MM-DD or an object with year, month, and day properties",
+            "$ref": "#/$defs/datetime"
+          },
           "title": {
             "type": "string",
             "description": "Title or position held during the work experience"
@@ -211,6 +219,10 @@
             "type": "string",
             "description": "Name of the institution"
           },
+          "location": {
+            "type": "string",
+            "description": "Location of the institution"
+          },
           "timeframe": {
             "description": "Timeframe of the education experience",
             "anyOf": [
@@ -222,6 +234,14 @@
               }
             ]
           },
+          "start-date": {
+            "description": "Start date of the education experience in the format YYYY-MM-DD or an object with year, month, and day properties",
+            "$ref": "#/$defs/datetime"
+          },
+          "end-date": {
+            "description": "End date of the education experience in the format YYYY-MM-DD or an object with year, month, and day properties",
+            "$ref": "#/$defs/datetime"
+          },
           "title": {
             "type": "string",
             "description": "Title or degree obtained during the education experience"
@@ -229,13 +249,35 @@
           "description": {
             "type": "string",
             "description": "Description of the education experience"
-          },
-          "location": {
-            "type": "string",
-            "description": "Location of the education experience"
           }
         }
       }
+    }
+  },
+  "$defs": {
+    "datetime": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "required": [
+            "year"
+          ],
+          "properties": {
+            "year": {
+              "type": "integer"
+            },
+            "month": {
+              "type": "integer"
+            },
+            "day": {
+              "type": "integer"
+            }
+          }
+        }
+      ]
     }
   }
 }

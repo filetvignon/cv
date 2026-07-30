@@ -1,23 +1,11 @@
 #import "./package.typ": *
+#import "../common.typ": *
 #import "@preview/fontawesome:0.6.0": *
 #import "@preview/to-stuff:0.5.1" as to
 
-#let headers = translate("headers")
-
-#let data-file = "data/" + lang + ".yaml"
-#let cv-data = yaml(data-file)
-
 #let profile = cv-data.profile
 
-#set document(
-  title: profile.at("first-name", default: "") + " " + profile.at("last-name", default: ""),
-  description: "Curriculum Vitae of "
-    + profile.at("first-name", default: "")
-    + " "
-    + profile.at("last-name", default: ""),
-)
-
-#set text(lang: lang)
+#show heading: set block(breakable: false)
 
 // To learn about theming, see https://github.com/tsnobip/typst-typographic-resume?tab=readme-ov-file#theme
 // make sure you have installed the fonts you want to use
@@ -42,7 +30,7 @@
   aside: {
     section(
       headers.contact,
-      for contact in profile.contact {
+      for contact in cv-data.contact {
         let icon-args = contact.at("icon-args", default: (:))
         if "size" in icon-args {
           icon-args.size = to.length(icon-args.size)

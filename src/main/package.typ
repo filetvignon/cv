@@ -1,21 +1,6 @@
 #import "@preview/to-stuff:0.5.1" as to
 #import "@preview/cmarker:0.1.8"
-
-#let inputs = sys.inputs
-#let valid-langs = ("en", "pt")
-
-#let lang = if inputs != none and "lang" in inputs and inputs.lang != none {
-  inputs.lang
-} else {
-  "en"
-}
-
-#if lang not in valid-langs {
-  panic("Invalid language: " + lang + ". Supported languages are: " + valid-langs.join(","))
-}
-
-#let translations-file = "i18n/" + lang + ".yaml"
-#let translations = yaml(translations-file)
+#import "../common.typ": *
 
 #let default-theme = (
   margin: 26pt,
@@ -30,38 +15,6 @@
   aside-width: 1fr,
   profile-picture-width: 70%,
 )
-
-#let translate(key, table: translations) = {
-  if key == none {
-    return panic("Must provide a key to translate")
-  }
-  let found-key = table.at(key, default: none)
-
-  if found-key != none {
-    return found-key
-  }
-
-  let split-keys = key.split(".")
-  let first-key = split-keys.first(default: none)
-
-  if first-key == none {
-    return panic("Translation key '" + key + "' not found in translations table")
-  }
-
-  found-key = table.at(first-key, default: none)
-  if found-key == none {
-    return panic("Translation key '" + key + "' not found in translations table")
-  }
-
-  if type(found-key) != dictionary {
-    return found-key
-  }
-
-  let new-key = split-keys.slice(1).join(".")
-
-  return translate(new-key, table: found-key)
-}
-
 
 #let resume(
   first-name: "",
@@ -142,7 +95,6 @@
           v(1fr)
         }
 
-
         set text(weight: "light", style: "italic", hyphenate: true)
         set par(leading: 1.0em)
         cmarker.render(bio)
@@ -173,7 +125,6 @@
   } else {
     v(theme.space-above)
   }
-
 
   heading(level: 1, upper(title))
   {
@@ -240,6 +191,8 @@
   location: "",
   description: "",
   remote: false,
+  start-date: none,
+  end-date: none,
 ) = {
   set text(size: theme.font-size) if "font-size" in theme
 
@@ -313,6 +266,8 @@
   institution: "",
   location: "",
   description: "",
+  start-date: none,
+  end-date: none,
 ) = {
   set text(size: theme.font-size) if "font-size" in theme
 
@@ -343,7 +298,6 @@
       // v(1pt)
     }
   }
-
 
   context {
     set text(font: theme.font) if "font" in theme

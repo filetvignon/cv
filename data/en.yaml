@@ -14,79 +14,6 @@ profile:
   location:
     city: São Paulo
     country: Brazil
-  contact:
-    - type: email
-      display: felipe.vignon@gmail.com
-      link: mailto:felipe.vignon@gmail.com
-      icon: envelope
-      # icon-padding: 1.3pt
-      icon-args:
-        solid: true
-    - type: phone
-      display: +55 11 971354176
-      link: tel:+5511971354176
-      icon: phone
-      # icon-padding: 1.8pt
-    - type: github
-      display: github.com/filetvignon
-      link: https://github.com/filetvignon
-      icon: github
-      # icon-padding: 2.1pt
-    - type: linkedin
-      display: linkedin.com/in/felipevignon
-      link: https://linkedin.com/in/felipevignon
-      icon: linkedin
-      # icon-padding: 2pt
-      icon-args:
-        size: 9pt
-
-tech-stack:
-  - name: Node.js
-    rating: 5
-  - name: Rest API
-    rating: 5
-  - name: Typescript
-    rating: 4
-  - name: Docker
-    rating: 4
-  - name: Python
-    rating: 3
-  - name: CI/CD
-    rating: 3
-  - name: Shell scripting
-    rating: 3
-  - name: HTML/CSS
-    rating: 2
-  - name: C/C++
-    rating: 2
-  - name: Go
-    rating: 1
-  - name: Java
-    rating: 1
-  - name: VBA
-    rating: 1
-
-databases:
-  - name: MarkLogic
-    rating: 4
-  - name: MongoDB
-    rating: 4
-  - name: CosmosDB
-    rating: 3
-  - name: MySQL
-    rating: 2
-
-frameworks:
-  - name: Express.js
-    rating: 5
-  - name: Fast API
-    rating: 4
-  - name: React
-    rating: 3
-  - name: Flutter
-    rating: 2
-  - name: Apache NiFi
-    rating: 4
 
 languages:
   - name: Portuguese
@@ -105,7 +32,13 @@ languages:
 
 work-experiences:
   - organization: 4V Services
-    timeframe: November 2022 - February 2026
+    timeframe: November 2022 - March 2026
+    start-date:
+      year: 2022
+      month: 11
+    end-date:
+      year: 2026
+      month: 3
     title: Marklogic Developer
     location: USA
     remote: true
@@ -129,6 +62,12 @@ work-experiences:
   - organization: Twiage
     title: Freelance Backend Developer
     timeframe: May 2022 - August 2022
+    start-date:
+      year: 2022
+      month: 5
+    end-date:
+      year: 2022
+      month: 8
     location: USA
     remote: true
     description: >
@@ -140,6 +79,12 @@ work-experiences:
   - organization: Powerschool
     title: Freelance Backend Developer
     timeframe: March 2022 - June 2022
+    start-date:
+      year: 2022
+      month: 3
+    end-date:
+      year: 2022
+      month: 6
     location: USA/Canada
     remote: true
     description: >
@@ -152,6 +97,12 @@ work-experiences:
   - organization: 100 Open Startups
     title: Freelance  Architect/Tech Lead
     timeframe: March 2022 - October 2022
+    start-date:
+      year: 2022
+      month: 3
+    end-date:
+      year: 2022
+      month: 10
     location: São Paulo, Brazil
     description: >
       - Create designs and specifications for developers to work on
@@ -162,6 +113,12 @@ work-experiences:
   - organization: ACT Digital
     title: Senior Backend Developer
     timeframe: April 2020 - February 2022
+    start-date:
+      year: 2020
+      month: 4
+    end-date:
+      year: 2022
+      month: 2
     location: São Paulo, Brazil
     description: >
       - As a technical leader, consolidate and align technical
@@ -178,8 +135,14 @@ work-experiences:
 
       - Design database models, Integrations with the client's backend
   - organization: 100 Open Startups
-    title: Developer
+    title: Backend Developer
     timeframe: September 2016 - April 2020
+    start-date:
+      year: 2016
+      month: 9
+    end-date:
+      year: 2020
+      month: 4
     location: Sao Paulo, Brazil
     description: >
       - MongoDB database structuring and maintenance
@@ -190,10 +153,26 @@ work-experiences:
 
 education:
   - institution: University of São Paulo
+    location: São Paulo, Brazil
     timeframe: 2017
+    start-date:
+      year: 2010
+      month: 2
+    end-date:
+      year: 2017
+      month: 12
     title: Bachelor Degree in Electrical Engineering
-    description: Focused in software engineering, with coursework in algorithms and data structures.
+    description: >
+      - Focused in software engineering, with coursework in algorithms and data structures.
   - institution: University of Toronto
+    location: Toronto, Canada
     timeframe: 2013
+    start-date:
+      year: 2013
+      month: 1
+    end-date:
+      year: 2013
+      month: 12
     title: Exchange program in Electrical and Computer Engineering
-    description: Research on design and analysis of electronic filters
+    description: >
+      - Research on design and analysis of electronic filters

@@ -8,7 +8,8 @@ headers:
   work-experiences: Work Experience
   education: Education
   skills: Technical Skills
-  bio: About
+  bio: Professional Summary
+  certifications: Certifications & Continuous Learning
 
 tags:
   remote: Remote

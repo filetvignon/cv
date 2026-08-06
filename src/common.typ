@@ -4,6 +4,25 @@
 #let inputs = sys.inputs
 #let valid-langs = ("en", "pt")
 
+#let deep-merge(base, merging) = {
+  if base == none {
+    base = (:)
+  }
+  let result = (:..base)
+  if (merging == none) {
+    return result
+  }
+  for (key, value) in merging {
+    if (key in result and type(value) == dictionary and type(result.at(key)) == dictionary) {
+      result.insert(key, deep-merge(result.at(key), value))
+    } else {
+      result.insert(key, merging.at(key))
+    }
+  }
+  return result
+}
+
+
 #let lang = if inputs != none and "lang" in inputs and inputs.lang != none {
   inputs.lang
 } else {
@@ -13,6 +32,16 @@
 #if lang not in valid-langs {
   panic("Invalid language: " + lang + ". Supported languages are: " + valid-langs.join(","))
 }
+
+
+#let data-dir = "../data/"
+#let lang-data = yaml(data-dir + lang + ".yaml")
+#let common-data = yaml(data-dir + "common.yaml")
+#let cv-data = deep-merge(common-data, lang-data)
+
+
+// #panic(cv-data)
+
 
 
 #let translations-file = "../i18n/" + lang + ".yaml"
@@ -51,11 +80,6 @@
 }
 
 #let headers = translate("headers")
-
-#let data-dir = "../data/"
-#let lang-data = yaml(data-dir + lang + ".yaml")
-#let common-data = yaml(data-dir + "common.yaml")
-#let cv-data = (:..common-data, ..lang-data)
 
 #set text(lang: lang)
 #set document(

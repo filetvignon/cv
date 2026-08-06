@@ -6,14 +6,12 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Senior Software Engineer specializing in backend development (Node.js, Python).
-    Analytical, self-driven and team-oriented, dedicated to robust,
-    scalable architecture and continuous learning
+    Senior Software Engineer specializing in backend development (Node.js, Python) and heavy data pipelines. Experienced in building microservices and highly concurrent applications designed to support tens of thousands of users and high-volume data streams across Azure and AWS environments. Focused on high-availability architecture, ensuring data consistency, and optimizing databases for distributed, international teams.
   titles:
     - Senior Software Engineer
   location:
     city: São Paulo
-    country: Brazil
+    country: Brazil (Open to Worldwide Remote)
 
 languages:
   - name: Portuguese
@@ -39,63 +37,22 @@ work-experiences:
     end-date:
       year: 2026
       month: 3
-    title: Marklogic Developer
+    title: Senior Backend Developer
     location: USA
     remote: true
     description: >
-      - Implement features and scripted tests to MarkLogic applications
+      - Built ETL pipelines with Apache NiFi and MarkLogic to process hundreds of thousands of records across multiple formats (SQL, NoSQL, PDFs, triples), handling batch, scheduled, and real-time streams, including files over 1GB.
 
-      - Create backend APIs in Node.js and Python to integrate with MarkLogic
+      - Implemented an OpenAI-powered RAG search system for patent documents, developing the Node.js and Python backend and managing Azure deployments and authentication.
 
-      - Create and manage NiFi flows to ingest data from multiple sources
-      in real time
+      - Improved high-volume data workflows for hundreds of users by writing custom MarkLogic scripts, tuning legacy MySQL queries, and standardizing metadata extraction.
 
-      - Implement generative AI integration
+      - Developed the Python backend for a custom spreadsheet application, integrating AI document summarization and working with an external React frontend team.
 
-      - Integrate applications through APIs and Azure Functions
+      - Developed and maintained a React frontend for a patent search system, implementing features such as advanced filtering, sorting, and pagination.
 
-      - Develop React apps that integrates MarkLogic through a backend API
-
-      - Update older apps with newer versions of the tech stack
-
-      - Work with a multicultural global team across different time zones
-  - organization: Twiage
+  - organization: Twiage, Powerschool, 100 Open Startups
     title: Freelance Backend Developer
-    timeframe: May 2022 - August 2022
-    start-date:
-      year: 2022
-      month: 5
-    end-date:
-      year: 2022
-      month: 8
-    location: USA
-    remote: true
-    description: >
-      - Maintenance and development of a microservices architecture in Node.js
-
-      - Update React elements
-
-      - Update packages and dependencies
-  - organization: Powerschool
-    title: Freelance Backend Developer
-    timeframe: March 2022 - June 2022
-    start-date:
-      year: 2022
-      month: 3
-    end-date:
-      year: 2022
-      month: 6
-    location: USA/Canada
-    remote: true
-    description: >
-      - Maintenance and development of services that are shared across
-      different products
-
-      - AWS serverless architecture written in TypeScript
-
-      - Extensive unit and integration testing
-  - organization: 100 Open Startups
-    title: Freelance  Architect/Tech Lead
     timeframe: March 2022 - October 2022
     start-date:
       year: 2022
@@ -103,13 +60,63 @@ work-experiences:
     end-date:
       year: 2022
       month: 10
-    location: São Paulo, Brazil
+    location: USA / São Paulo, Brazil
+    remote: true
     description: >
-      - Create designs and specifications for developers to work on
+      - Maintained and updated a Node.js microservices architecture, resolving legacy dependencies and improving React frontend components.
 
-      - Update Node.js and AWS systems
+      - Updated AWS EC2 infrastructure and services, ensuring compatibility with the latest packages and dependencies.
 
-      - Design and work on integrations with third-party systems
+      - Developed shared backend services utilizing an AWS Serverless architecture and TypeScript.
+
+      - Implemented comprehensive unit and integration testing to ensure reliable deployments and code quality.
+
+  # - organization: Twiage
+  #   title: Freelance Backend Developer
+  #   timeframe: May 2022 - August 2022
+  #   start-date:
+  #     year: 2022
+  #     month: 5
+  #   end-date:
+  #     year: 2022
+  #     month: 8
+  #   location: USA
+  #   remote: true
+  #   description: >
+  #     - Maintenance and development of a microservices architecture in Node.js
+  # - Update React elements
+  # - Update packages and dependencies
+  # - organization: Powerschool
+  #   title: Freelance Backend Developer
+  #   timeframe: March 2022 - June 2022
+  #   start-date:
+  #     year: 2022
+  #     month: 3
+  #   end-date:
+  #     year: 2022
+  #     month: 6
+  #   location: USA/Canada
+  #   remote: true
+  #   description: >
+  # - Maintenance and development of services that are shared across
+  # different products
+  # - AWS serverless architecture written in TypeScript
+  # - Extensive unit and integration testing
+  # - organization: 100 Open Startups
+  #   title: Freelance  Architect/Tech Lead
+  #   timeframe: March 2022 - October 2022
+  #   start-date:
+  #     year: 2022
+  #     month: 3
+  #   end-date:
+  #     year: 2022
+  #     month: 10
+  #   location: São Paulo, Brazil
+  #   description: >
+  #     - Create designs and specifications for developers to work on
+  #     - Update Node.js and AWS systems
+  #     - Design and work on integrations with third-party systems
+
   - organization: ACT Digital
     title: Senior Backend Developer
     timeframe: April 2020 - February 2022
@@ -121,19 +128,12 @@ work-experiences:
       month: 2
     location: São Paulo, Brazil
     description: >
-      - As a technical leader, consolidate and align technical
-      implementations across backend and frontend teams
+      - Standardized development practices for a multinational team (LatAm and France) by automating code quality checks with linters, formatters, and Git hooks.
 
-      - Work with multiple clients, alongside several different global teams across different time zones
+      - Built a Node.js and TypeScript microservices backend using Azure (App Services, KeyVault, Functions), scaling the platform to support tens of thousands of active store owners.
 
-      - Backend consisting of microservices in typescript
+      - Designed CosmosDB data models and consolidated international databases, using Azure Service Bus to ingest and sync records from multiple regional sources.
 
-      - Microsoft Azure - Service Apps, KeyVault, CosmosDB, Functions and
-      Service Bus (queues and topics)
-
-      - REST API design and implementation
-
-      - Design database models, Integrations with the client's backend
   - organization: 100 Open Startups
     title: Backend Developer
     timeframe: September 2016 - April 2020
@@ -143,30 +143,32 @@ work-experiences:
     end-date:
       year: 2020
       month: 4
-    location: Sao Paulo, Brazil
+    location: São Paulo, Brazil
     description: >
-      - MongoDB database structuring and maintenance
+      - Built a Node.js and Express backend from scratch to power an event management platform, scaling the REST API to handle thousands of concurrent users and high request volumes during peak events.
 
-      - Data analysis and filtering, raw data migration to database
+      - Designed the complete MongoDB database schema and implemented custom application-level locks to guarantee data consistency for concurrent operations.
 
-      - Server maintenance and backend system creation for app and site
+      - Developed an automated meeting scheduling workflow using Amazon SES, SendGrid, and SQS, allowing users to RSVP and propose new times directly via email replies.
+
+      - Managed AWS EC2 deployments and infrastructure, building custom APIs to feed system metrics into performance monitoring tools and internal reporting dashboards.
 
 education:
   - institution: University of São Paulo
     location: São Paulo, Brazil
-    timeframe: 2017
+    timeframe: "February 2010 - December 2017"
     start-date:
       year: 2010
       month: 2
     end-date:
       year: 2017
       month: 12
-    title: Bachelor Degree in Electrical Engineering
+    title: Bachelor's Degree in Electrical Engineering
     description: >
-      - Focused in software engineering, with coursework in algorithms and data structures.
+      - Focused in software engineering, with coursework in algorithms and data structures
   - institution: University of Toronto
     location: Toronto, Canada
-    timeframe: 2013
+    timeframe: "January 2013 - December 2013"
     start-date:
       year: 2013
       month: 1
@@ -176,3 +178,29 @@ education:
     title: Exchange program in Electrical and Computer Engineering
     description: >
       - Research on design and analysis of electronic filters
+
+certifications:
+  - institution: Coursera - Vanderbilt University
+    location: Online
+    timeframe: "April 2026 - June 2026"
+    start-date:
+      year: 2026
+      month: 4
+    end-date:
+      year: 2026
+      month: 6
+    title: Generative AI Software Engineering Specialization
+    description: >
+      - AI-Powered Software Engineering and Automation
+  - institution: University of São Paulo
+    location: São Paulo, Brazil
+    timeframe: "June 2012 - December 2012"
+    start-date:
+      year: 2012
+      month: 6
+    end-date:
+      year: 2012
+      month: 12
+    title: Object-Oriented Programming
+    description: >
+      - Object-oriented programming course in Java, with focus on design patterns and software architecture

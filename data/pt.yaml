@@ -6,14 +6,12 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de Software Sênior especializado em desenvolvimento
-    backend (Node.js, Python). Analítico, proativo e orientado ao trabalho em equipe,
-    com dedicação à criação de uma arquitetura robusta, escalável e em constante aprendizado
+    Engenheiro de Software Sênior especializado em desenvolvimento backend (Node.js, Python) e pipelines de dados complexos. Experiência na construção de microsserviços e aplicações altamente concorrentes projetadas para suportar dezenas de milhares de usuários e fluxos de dados de alto volume em ambientes Azure e AWS. Focado em arquitetura de alta disponibilidade, garantindo a consistência dos dados e otimizando bancos de dados para equipes distribuídas e internacionais.
   titles:
     - Engenheiro de Software Sênior
   location:
     city: São Paulo
-    country: Brasil
+    country: Brasil (Aberto a vagas remotas globais)
 
 languages:
   - name: Português
@@ -30,87 +28,67 @@ languages:
 
 work-experiences:
   - organization: 4V Services
-    timeframe: Novembro 2022 - Março 2026
+    timeframe: Novembro de 2022 - Março de 2026
     start-date:
       year: 2022
       month: 11
     end-date:
       year: 2026
       month: 3
-    title: Desenvolvedor MarkLogic
+    title: Desenvolvedor Backend Sênior
     location: EUA
     remote: true
     description: >
-      - Implementar funcionalidades e testes automatizados em aplicações MarkLogic
+      - Construí pipelines de ETL com Apache NiFi e MarkLogic para processar centenas de milhares de registros em múltiplos formatos (SQL, NoSQL, PDFs, triples), lidando com processamento em lote (batch), rotinas agendadas e fluxos em tempo real, incluindo arquivos de mais de 1GB.
 
-      - Criar APIs de backend em Node.js e Python para integração com MarkLogic
+      - Implementei um sistema de busca RAG com tecnologia OpenAI para documentos de patentes, desenvolvendo o backend em Node.js e Python e gerenciando implantações e autenticação no Azure.
 
-      - Criar e gerenciar fluxos em NiFi para ingestão de dados de múltiplas fontes
-      em tempo real
+      - Melhorei fluxos de trabalho de dados de alto volume para centenas de usuários escrevendo scripts personalizados em MarkLogic, otimizando consultas legadas no MySQL e padronizando a extração de metadados.
 
-      - Implementar integração de IA generativa
+      - Desenvolvi o backend em Python para um aplicativo de planilhas personalizado, integrando sumarização de documentos com IA e trabalhando com uma equipe externa de frontend em React.
 
-      - Integrar aplicações através de APIs e Azure Functions
+      - Desenvolvi e mantive um frontend em React para um sistema de busca de patentes, implementando recursos como filtragem avançada, ordenação e paginação.
 
-      - Desenvolver aplicações React que se integram ao MarkLogic através de uma API backend
-
-      - Atualizar aplicações antigas para versões recentes das tecnologias usadas
-
-      - Trabalhar com uma equipe global multicultural em diferentes fusos horários
-  - organization: Twiage
+  - organization: Twiage, Powerschool, 100 Open Startups
     title: Desenvolvedor Backend Freelancer
-    timeframe: Maio 2022 - Agosto 2022
-    start-date:
-      year: 2022
-      month: 5
-    end-date:
-      year: 2022
-      month: 8
-    location: EUA
-    remote: true
-    description: >
-      - Manutenção e desenvolvimento de uma arquitetura de microsserviços em Node.js
-
-      - Atualizar elementos de React
-
-      - Atualizar pacotes e dependências
-  - organization: Powerschool
-    title: Desenvolvedor Backend Freelancer
-    timeframe: Março 2022 - Junho 2022
-    start-date:
-      year: 2022
-      month: 3
-    end-date:
-      year: 2022
-      month: 6
-    location: EUA/Canadá
-    remote: true
-    description: >
-      - Manutenção e desenvolvimento de serviços para serem compartilhados entre
-      diferentes produtos
-
-      - Arquitetura serverless na AWS desenvolvida em TypeScript
-
-      - Testes unitários e de integração extensivos
-  - organization: 100 Open Startups
-    title: Arquiteto/Líder Técnico Freelancer
-    timeframe: Março 2022 - Outubro 2022
+    timeframe: Março de 2022 - Outubro de 2022
     start-date:
       year: 2022
       month: 3
     end-date:
       year: 2022
       month: 10
+    location: EUA / São Paulo, Brasil
+    remote: true
+    description: >
+      - Mantive e atualizei uma arquitetura de microsserviços em Node.js, resolvendo dependências legadas e melhorando componentes do frontend em React.
+
+      - Atualizei a infraestrutura e os serviços do AWS EC2, garantindo compatibilidade com os pacotes e dependências mais recentes.
+
+      - Desenvolvi serviços de backend compartilhados utilizando arquitetura Serverless da AWS e TypeScript.
+
+      - Implementei testes unitários e de integração abrangentes para garantir implantações confiáveis e qualidade de código.
+
+  - organization: ACT Digital
+    title: Desenvolvedor Backend Sênior
+    timeframe: Abril de 2020 - Fevereiro de 2022
+    start-date:
+      year: 2020
+      month: 4
+    end-date:
+      year: 2022
+      month: 2
     location: São Paulo, Brasil
     description: >
-      - Criar designs e especificações para orientar o trabalho dos desenvolvedores
+      - Padronizei práticas de desenvolvimento para uma equipe multinacional (América Latina e França) automatizando verificações de qualidade de código com linters, formatadores e Git hooks.
 
-      - Atualizar sistemas em Node.js e na AWS
+      - Construí um backend de `microsser`viços em Node.js e TypeScript usando Azure (App Services, KeyVault, Functions), escalando a plataforma para suportar dezenas de milhares de lojistas ativos.
 
-      - Projetar e implementar integrações com sistemas de terceiros
+      - Projetei modelos de dados no CosmosDB e consolidei bancos de dados internacionais, usando Azure Service Bus para ingerir e sincronizar registros de múltiplas fontes regionais.
+
   - organization: 100 Open Startups
     title: Desenvolvedor Backend
-    timeframe: Setembro 2016 - Abril 2020
+    timeframe: Setembro de 2016 - Abril de 2020
     start-date:
       year: 2016
       month: 9
@@ -119,44 +97,18 @@ work-experiences:
       month: 4
     location: São Paulo, Brasil
     description: >
-      - Estruturação e manutenção de banco de dados MongoDB
+      - Construí um backend em Node.js e Express do zero para sustentar uma plataforma de gerenciamento de eventos, escalando a API REST para lidar com milhares de usuários simultâneos e altos volumes de solicitações durante eventos de pico.
 
-      - Análise e filtragem de dados, migração de dados brutos para o banco de dados
+      - Projetei o esquema completo do banco de dados MongoDB e implementei locks customizados em nível de aplicação para garantir a consistência dos dados para operações simultâneas.
 
-      - Manutenção de servidores e criação de sistemas backend para app e site
+      - Desenvolvi um fluxo de trabalho automatizado de agendamento de reuniões usando Amazon SES, SendGrid e SQS, permitindo aos usuários confirmar presença e propor novos horários diretamente via respostas de e-mail.
 
-      - Trabalhei com Java
+      - Gerenciei implantações e infraestrutura do AWS EC2, construindo APIs personalizadas para alimentar métricas do sistema em ferramentas de monitoramento de desempenho e painéis de relatórios internos.
 
-  - organization: ACT Digital
-    title: Desenvolvedor Backend Sênior
-    timeframe: Abril 2020 - Fevereiro 2022
-    start-date:
-      year: 2020
-      month: 4
-    end-date:
-      year: 2022
-      month: 2
-    location: São Paulo, Brasil
-    description: >
-      - Como líder técnico, consolidar e alinhar implementações
-      técnicas entre as equipes de backend e frontend
-
-      - Trabalhar com diferentes clientes, em conjunto com diversas equipes globais em diferentes fusos horários
-
-      - Backend composto por microsserviços em TypeScript
-
-      - Microsoft Azure - Service Apps, KeyVault, CosmosDB, Functions e
-      Service Bus (filas e tópicos)
-
-      - Design e implementação de APIs REST
-
-      - Modelagem de banco de dados e integrações com o backend do cliente
-
-      - Trabalhar com uma equipe global multicultural em diferentes fusos horários
 education:
   - institution: Universidade de São Paulo
     location: São Paulo, Brasil
-    timeframe: 2017
+    timeframe: "Fevereiro de 2010 - Dezembro de 2017"
     start-date:
       year: 2010
       month: 2
@@ -165,16 +117,54 @@ education:
       month: 12
     title: Bacharelado em Engenharia Elétrica
     description: >
-      - Foco em engenharia de software, com disciplinas de algoritmos e estruturas de dados.
+      - Foco em engenharia de software, com matérias em algoritmos e estruturas de dados
   - institution: University of Toronto
     location: Toronto, Canadá
-    timeframe: 2013
+    timeframe: "Janeiro de 2013 - Dezembro de 2013"
     start-date:
       year: 2013
       month: 1
     end-date:
       year: 2013
       month: 12
-    title: Intercâmbio em Engenharia Elétrica e de Computação
+    title: Programa de Intercâmbio em Engenharia Elétrica e de Computação
     description: >
-      - Pesquisa em projeto e análise de filtros eletrônicos
+      - Pesquisa sobre design e análise de filtros eletrônicos
+
+certifications:
+  - institution: Coursera - Vanderbilt University
+    location: Online
+    timeframe: "Abril de 2026 - Junho de 2026"
+    start-date:
+      year: 2026
+      month: 4
+    end-date:
+      year: 2026
+      month: 6
+    title: Especialização em Engenharia de Software com IA Generativa
+    description: >
+      - Engenharia de Software e Automação com IA
+  - institution: Universidade de São Paulo
+    location: São Paulo, Brasil
+    timeframe: "Junho de 2012 - Dezembro de 2012"
+    start-date:
+      year: 2012
+      month: 6
+    end-date:
+      year: 2012
+      month: 12
+    title: Programação Orientada a Objetos
+    description: >
+      - Curso de programação orientada a objetos em Java, com foco em padrões de projeto e arquitetura de software
+
+skills:
+  familiar:
+    - React
+    - Flutter
+    - Go
+    - "C / C++"
+    - Java
+    - VBA
+    - "HTML / CSS"
+    - Microserviços
+    - Arquitetura Serverless

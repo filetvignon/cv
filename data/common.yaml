@@ -67,7 +67,7 @@ databases:
 frameworks:
   - name: Express.js
     rating: 5
-  - name: Fast API
+  - name: FastAPI
     rating: 4
   - name: React
     rating: 3
@@ -81,7 +81,7 @@ skills:
     - Node.js
     - Python
     - Fast API
-    - Typescript
+    - TypeScript
     - REST API
     - Shell scripting
   databases:
@@ -94,14 +94,14 @@ skills:
     - Microsoft Azure
     - AWS
     - Apache NiFi
-    - CI/CD
+    - "CI / CD"
   familiar:
     - React
     - Flutter
     - Go
-    - C/C++
+    - "C / C++"
     - Java
     - VBA
-    - HTML/CSS
+    - "HTML / CSS"
     - Microservices
     - Serverless architecture

@@ -8,10 +8,10 @@ contact:
     icon-args:
       solid: true
   - type: phone
-    display: +55 11 971354176
+    display: +55 11 97135-4176
     link: tel:+5511971354176
     icon: phone
-    handle: +55 11 971354176
+    handle: +55 11 97135-4176
     # icon-padding: 1.8pt
   - type: github
     display: github.com/filetvignon
@@ -80,7 +80,7 @@ skills:
   core:
     - Node.js
     - Python
-    - Fast API
+    - FastAPI
     - TypeScript
     - REST API
     - Shell scripting

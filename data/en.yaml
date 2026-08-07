@@ -6,7 +6,8 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Senior Software Engineer specializing in backend development (Node.js, Python) and heavy data pipelines. Experienced in building microservices and highly concurrent applications designed to support tens of thousands of users and high-volume data streams across Azure and AWS environments. Focused on high-availability architecture, ensuring data consistency, and optimizing databases for distributed, international teams.
+    Senior Backend Engineer (Node.js, Python) specializing in highly concurrent architecture and large-scale data pipelines, completely adaptable to fully remote, hybrid, or on-site opportunities worldwide.
+  # Senior Software Engineer specializing in backend development (Node.js, Python) and heavy data pipelines. Experienced in building microservices and highly concurrent applications designed to support tens of thousands of users and high-volume data streams across Azure and AWS environments. Focused on high-availability architecture, ensuring data consistency, and optimizing databases for distributed, international teams.
   titles:
     - Senior Software Engineer
   location:
@@ -165,7 +166,7 @@ education:
       month: 12
     title: Bachelor's Degree in Electrical Engineering
     description: >
-      - Focused in software engineering, with coursework in algorithms and data structures
+      - Focused on software engineering, with coursework in algorithms and data structures
   - institution: University of Toronto
     location: Toronto, Canada
     timeframe: "January 2013 - December 2013"

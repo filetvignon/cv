@@ -14,7 +14,6 @@
 )
 
 #show heading: set block(breakable: false)
-#let skills_translations = translate("skills")
 #set page(header: none, footer: none)
 #show regex("\$?C\s*\/\s*C\+\+\$?"): "C / C++"
 #show regex("\$?HTML\s*\/\s*CSS\$?"): "HTML / CSS"
@@ -28,12 +27,19 @@
   // entry-row-gap: 0.7em,
   // description-gap: 0.8em,
   header-content-gap: 1.4em,
+  header-row-gap: 4pt,
   item-gap: 1.5em,
+  margin: (
+    left: 1.7cm,
+    right: 1.7cm,
+    top: 1.2cm,
+    bottom: 1.3cm,
+  ),
 )
 
 #show: cv.with(
   profile: (
-    name: profile.first-name + " " + profile.last-name,
+    name: [#profile.first-name #profile.last-name],
     role: profile.titles.join(", "),
     address: [#profile.location.city, #profile.location.country],
     contacts: (
@@ -42,6 +48,11 @@
       (text: contact.linkedin.display, link: contact.linkedin.link),
       (text: contact.github.display, link: contact.github.link),
     ),
+  ),
+  theme: (
+    font-type: "Verdana",
+    body-size: 10pt,
+    section-size: 11pt,
   ),
   layout: layout,
   options: (
@@ -59,14 +70,21 @@
 
   section-block("experience", title: headers.work-experiences)[
     // #block(breakable: false)[
-    #for work in cv-data.work-experiences {
+    #for item in cv-data.work-experiences {
       block(breakable: false)[
         #experience(
-          title: work.at("title", default: ""), // title
-          organization: work.at("organization", default: ""), // company
-          location: work.at("location", default: ""), // location
-          date: work.timeframe,
-          description: eval(work.description, mode: "markup"),
+          title: item.at("title", default: ""), // title
+          organization: item.at("organization", default: ""), // company
+          location: item.at("location", default: ""), // location
+          date: display-timeframe(
+            start-date: item.at("start-date", default: none),
+            end-date: item.at(
+              "end-date",
+              default: none,
+            ),
+            pattern: "MMM yyyy",
+          ),
+          description: eval(item.description, mode: "markup"),
         )
       ]
     }
@@ -79,7 +97,14 @@
         institution: item.at("institution", default: ""), // institution
         location: item.at("location", default: ""), // location
         major: item.at("title", default: ""), // degree
-        date: item.timeframe,
+        date: display-timeframe(
+          start-date: item.at("start-date", default: none),
+          end-date: item.at(
+            "end-date",
+            default: none,
+          ),
+          pattern: "MMM yyyy",
+        ),
         description: eval(item.description, mode: "markup"),
       )
     }
@@ -92,7 +117,14 @@
         institution: item.at("institution", default: ""), // institution
         location: item.at("location", default: ""), // location
         major: item.at("title", default: ""), // degree
-        date: item.timeframe,
+        date: display-timeframe(
+          start-date: item.at("start-date", default: none),
+          end-date: item.at(
+            "end-date",
+            default: none,
+          ),
+          pattern: "MMM yyyy",
+        ),
         description: eval(item.description, mode: "markup"),
       )
     }
@@ -101,25 +133,36 @@
   section-block("skills", title: headers.skills)[
     #for (key, value) in cv-data.skills {
       let skill = skills_translations.at(key, default: key)
-      detail-line(
-        title: skill,
-        content: value.join(", "),
-      )
+      [
+        - #detail-line(
+            title: skill,
+            content: value.join(", "),
+          )
+      ]
     }
     #item-gap
   ],
 
   section-block("languages", title: headers.languages)[
     #for language in cv-data.languages {
-      detail-line(
-        title: language.name,
-        content: language.level,
-      )
+      [
+        - #detail-line(
+            title: language.name,
+            content: language.level,
+          )
+      ]
     }
     #item-gap
   ],
 )
 
-#let section-order = ("about", "experience", "education", "certifications", "skills", "languages")
+#let section-order = (
+  "about",
+  "experience",
+  "education",
+  "certifications",
+  "skills",
+  "languages",
+)
 
 #render-sections(sections: sections, order: section-order)

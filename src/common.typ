@@ -1,5 +1,5 @@
-#import "@preview/datify:1.0.0": custom-date-format
 #import "@preview/to-stuff:0.5.1" as to
+#import "@preview/datify:1.3.0": custom-date-format
 
 #let inputs = sys.inputs
 #let valid-langs = ("en", "pt")
@@ -80,6 +80,7 @@
 }
 
 #let headers = translate("headers")
+#let skills_translations = translate("skills")
 
 #set text(lang: lang)
 #set document(
@@ -118,4 +119,36 @@
   }
 
   panic("Invalid date type: " + type(date) + ". Expected types: datetime, dictionary, or string")
+}
+
+#let display-datetime(date, pattern: "MMM yyyy", language: lang) = {
+  let dt = to-datetime(date)
+  return custom-date-format(dt, pattern: pattern, lang: language)
+}
+
+#let display-timeframe(start-date: none, end-date: none, pattern: "MMM yyyy", language: lang) = {
+  let start = none
+  let end = none
+
+  if start-date != none {
+    start = display-datetime(start-date, pattern: pattern, language: language)
+  }
+
+  if end-date != none {
+    end = display-datetime(end-date, pattern: pattern, language: language)
+  }
+
+  if start == none and end == none {
+    return ""
+  }
+
+  if start == none {
+    return end
+  }
+
+  if end == none {
+    return start
+  }
+
+  return [#start #sym.dash.en #end]
 }

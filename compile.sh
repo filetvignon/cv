@@ -5,7 +5,7 @@ build_dir="build"
 if [ -n "$1" ] && [ "$1" != "-" ]; then
   models=$(echo "$1" | tr ',' ' ')
 else
-  models="main basic modernpro stephenxu"
+  models="typographic technical modernpro stephenxu"
 fi
 
 if [ -n "$2" ] && [ "$2" != "-" ]; then

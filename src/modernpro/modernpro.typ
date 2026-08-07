@@ -33,7 +33,7 @@
     left: 1.7cm,
     right: 1.7cm,
     top: 1.2cm,
-    bottom: 1.3cm,
+    bottom: 1cm,
   ),
 )
 
@@ -43,7 +43,7 @@
     role: profile.titles.join(", "),
     address: [#profile.location.city, #profile.location.country],
     contacts: (
-      (text: contact.phone.display),
+      (text: contact.phone.display, link: contact.phone.link),
       (text: contact.email.display, link: contact.email.link),
       (text: contact.linkedin.display, link: contact.linkedin.link),
       (text: contact.github.display, link: contact.github.link),
@@ -52,7 +52,7 @@
   theme: (
     font-type: "Verdana",
     body-size: 10pt,
-    section-size: 11pt,
+    section-size: 10.5pt,
   ),
   layout: layout,
   options: (

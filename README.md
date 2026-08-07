@@ -1,8 +1,5 @@
 # CV in Typst
 
-<https://github.com/tsnobip/typst-typographic-resume>
-<https://github.com/roaldarbol/academicv>
-
 ## Git Hooks
 
 This repository tracks hooks in `.githooks/`.
@@ -19,15 +16,31 @@ The `pre-push` hook compiles all templates in english and portuguese, stages com
 
 ### Modernpro
 
+<https://github.com/jxpeng98/Typst-CV-Resume>
+
 ![CV - Modernpro](./build/modernpro/svg/cv-en-modernpro-1.svg)
 ![CV - Modernpro](./build/modernpro/svg/cv-en-modernpro-2.svg)
 
 ### StephenXu
 
+<https://github.com/stuxf/basic-typst-resume-template>
+
 ![CV - StephenXu](./build/stephenxu/svg/cv-en-stephenxu-1.svg)
 ![CV - StephenXu](./build/stephenxu/svg/cv-en-stephenxu-2.svg)
 
-### Basic
+### Technical
 
-![CV - Basic](./build/basic/svg/cv-en-basic-1.svg)
-![CV - Basic](./build/basic/svg/cv-en-basic-2.svg)
+<https://github.com/steadyfall/simple-technical-resume-template>
+
+![CV - Technical](./build/technical/svg/cv-en-technical-1.svg)
+![CV - Technical](./build/technical/svg/cv-en-technical-2.svg)
+
+### Typographic
+
+<https://github.com/tsnobip/typst-typographic-resume>
+
+![CV - Typographic](./build/typographic/svg/cv-en-typographic-1.svg)
+
+## Other templates
+
+- <https://github.com/roaldarbol/academicv>

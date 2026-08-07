@@ -1,33 +1,57 @@
 #!/bin/sh
 
 build_dir="build"
-pdf_dir_suffix="pdf"
-svg_dir_suffix="svg"
 
-models="main basic modernpro stephenxu"
-languages="en pt"
+if [ -n "$1" ] && [ "$1" != "-" ]; then
+  models=$(echo "$1" | tr ',' ' ')
+else
+  models="main basic modernpro stephenxu"
+fi
 
-mkdir -p "$build_dir"
-rm -rf "${build_dir:?}"/*
+if [ -n "$2" ] && [ "$2" != "-" ]; then
+  output_formats=$(echo "$2" | tr ',' ' ')
+else
+  output_formats="pdf svg"
+fi
+
+if [ -n "$3" ] && [ "$3" != "-" ]; then
+  languages=$(echo "$3" | tr ',' ' ')
+else
+  languages="en pt"
+fi
 
 for model in $models; do
-  mkdir -p "$build_dir/$model/$pdf_dir_suffix"
-  mkdir -p "$build_dir/$model/$svg_dir_suffix"
+  for format in $output_formats; do
+    # rm -rf "${build_dir:?}/${model:?}/${format:?}"
+    mkdir -p "$build_dir/$model/$format"
+  done
 done
 
-compile() {
-  lang="$1"
-  echo "Compiling Typst CV in $lang"
-  
-  for model in $models; do
-    echo "Compiling $model PDF"
-    typst compile --input lang="$lang" --root ../../ src/$model/$model.typ "$build_dir/$model/$pdf_dir_suffix/cv-$lang-$model.pdf"
-    
-    echo "Compiling $model SVG"
-    typst compile --input lang="$lang" --format svg --root ../../ src/$model/$model.typ "$build_dir/$model/$svg_dir_suffix/cv-$lang-$model-{0p}.svg"
-  done
+upper() {
+  echo "$1" | tr '[:lower:]' '[:upper:]'
 }
 
-for lang in $languages; do
-  compile "$lang"
+
+
+compile() {
+  model="$1"
+  format="$2"
+  lang="$3"
+
+  filename="cv-$lang-$model.$format"
+
+  if [ "$format" = "svg" ] || [ "$format" = "png" ]; then
+    filename="cv-$lang-$model-{0p}.$format"
+  fi
+  
+  echo "Compiling $(upper "$model $format $lang") to $build_dir/$model/$format/$filename"
+  typst compile --input lang="$lang" --format "$format" --root ../../ "src/$model/$model.typ" "$build_dir/$model/$format/$filename"
+}
+
+for model in $models; do
+  for format in $output_formats; do
+    for lang in $languages; do
+      compile "$model" "$format" "$lang"
+    done
+  done
 done

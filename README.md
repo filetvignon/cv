@@ -13,14 +13,21 @@ After cloning, run:
 git config core.hooksPath .githooks
 ```
 
-The `pre-push` hook compiles `main.typ`, stages compiled files, and amends the latest commit if the files have changed.
+The `pre-push` hook compiles all templates in english and portuguese, stages compiled files, and amends the latest commit if any files have changed.
 
 ## Previews
 
-### English
+### Modernpro
 
-![CV - English](./build/svg/cv-en.svg)
+![CV - Modernpro](./build/modernpro/svg/cv-en-modernpro-1.svg)
+![CV - Modernpro](./build/modernpro/svg/cv-en-modernpro-2.svg)
 
-### Portuguese
+### StephenXu
 
-![CV - Portuguese](./build/svg/cv-pt.svg)
+![CV - StephenXu](./build/stephenxu/svg/cv-en-stephenxu-1.svg)
+![CV - StephenXu](./build/stephenxu/svg/cv-en-stephenxu-2.svg)
+
+### Basic
+
+![CV - Basic](./build/basic/svg/cv-en-basic-1.svg)
+![CV - Basic](./build/basic/svg/cv-en-basic-2.svg)

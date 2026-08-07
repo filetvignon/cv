@@ -68,11 +68,11 @@
   ]
 }
 
-== #headers.education
+#block(breakable: false)[
+  == #headers.education
 
-#for education in cv-data.education {
-  block(breakable: false)[
-    #edu(
+  #for education in cv-data.education {
+    edu(
       institution: education.at("institution", default: ""), // institution
       location: education.at("location", default: ""), // location
       degree: education.at("title", default: ""), // degree
@@ -81,9 +81,10 @@
         end-date: display-datetime(education.at("end-date", default: ""), pattern: "MMM yyyy"),
       ),
     )
-    #eval(education.description, mode: "markup")
-  ]
-}
+    eval(education.description, mode: "markup")
+  }
+]
+
 
 == #headers.certifications
 

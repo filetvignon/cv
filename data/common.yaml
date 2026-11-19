@@ -14,6 +14,7 @@ contact:
     handle: +55 11 97135-4176
     # icon-padding: 1.8pt
   - type: github
+    hidden: true # empty profile for now; set to false to show it again
     display: github.com/filetvignon
     link: https://github.com/filetvignon
     icon: github
@@ -77,31 +78,31 @@ frameworks:
     rating: 4
 
 skills:
-  core:
+  languages-frameworks:
     - Node.js
+    - TypeScript
+    - JavaScript
+    - Express
     - Python
     - FastAPI
-    - TypeScript
-    - REST API
-    - Shell scripting
+    - React
   databases:
     - MongoDB
     - MarkLogic
-    - CosmosDB
+    - Azure CosmosDB
     - MySQL
-  infrastructure:
-    - Docker
-    - Microsoft Azure
+    - SQL
+  cloud-data:
+    - "Microsoft Azure (App Services, Functions, Service Bus)"
     - AWS
     - Apache NiFi
-    - "CI / CD"
-  familiar:
-    - React
-    - Flutter
-    - Go
-    - "C / C++"
-    - Java
-    - VBA
-    - "HTML / CSS"
-    - Microservices
-    - Serverless architecture
+    - Docker
+    - CI/CD
+  integrations:
+    - REST APIs
+    - webhooks
+    - SSO
+    - SharePoint
+    - SendGrid (Twilio)
+    - Sympla
+    - RAG systems

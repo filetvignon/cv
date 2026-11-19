@@ -165,4 +165,9 @@
   "languages",
 )
 
+// Drop the certifications section when the list is empty
+#let sections = sections.filter(s => (
+  s.id != "certifications" or cv-data.at("certifications", default: ()).len() > 0
+))
+
 #render-sections(sections: sections, order: section-order)

@@ -6,18 +6,21 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro Backend Sênior (Node.js, Python) especializado em arquiteturas de alta concorrência e pipelines de dados em larga escala, completamente adaptável a oportunidades 100% remotas, híbridas ou presenciais em qualquer lugar do mundo.
+    Engenheiro de software com mais de 9 anos de experiência em backend (Node.js/TypeScript e Python), desenvolvendo APIs, integrações e pipelines de dados para clientes internacionais. Construí do zero o backend de uma startup como único engenheiro backend e fui promovido a Tech Lead em um projeto multinacional para a Sodexo. Reconhecido por code reviews minuciosos, mentoria de júniores e rapidez para aprender novas tecnologias.
   titles:
-    - Engenheiro de Software Sênior
+    - Engenheiro de Software
+  headline: "Engenheiro de Software | Backend, APIs e Integrações"
   location:
     city: São Paulo
-    country: Brasil (Aberto a vagas remotas globais)
+    country: Brasil (vagas remotas)
 
 languages:
   - name: Português
     level: Nativo
   - name: Inglês
     level: Fluente
+  - name: Espanhol
+    level: Básico
   - name: Francês
     level: Básico
 
@@ -35,42 +38,24 @@ work-experiences:
     end-date:
       year: 2026
       month: 3
-    title: Desenvolvedor Backend Sênior
+    title: Desenvolvedor Backend Sênior (Contrato)
     location: EUA
     remote: true
     description: >
-      - Construí pipelines de ETL com Apache NiFi e MarkLogic para processar centenas de milhares de registros em múltiplos formatos (SQL, NoSQL, PDFs, triples), lidando com processamento em lote (batch), rotinas agendadas e fluxos em tempo real, incluindo arquivos de mais de 1GB.
+      - Construí do zero o backend da plataforma de busca interna da 4V, incluindo o modelo de dados e os fluxos Apache NiFi que reúnem dados e arquivos de várias fontes em um único banco pesquisável.
 
-      - Implementei um sistema de busca RAG com tecnologia OpenAI para documentos de patentes, desenvolvendo o backend em Node.js e Python e gerenciando implantações e autenticação no Azure.
+      - Aprendi Python e FastAPI no trabalho para construir do zero um backend para o cliente DuPont, modelando o banco e integrando-o ao sistema RAG e às permissões do SharePoint.
 
-      - Melhorei fluxos de trabalho de dados de alto volume para centenas de usuários escrevendo scripts personalizados em MarkLogic, otimizando consultas legadas no MySQL e padronizando a extração de metadados.
+      - Adicionei controle de permissões ao sistema de busca RAG da DuPont, integrando SharePoint e identidade do Azure para que cada usuário visse só os documentos a que tem acesso.
 
-      - Desenvolvi o backend em Python para um aplicativo de planilhas personalizado, integrando sumarização de documentos com IA e trabalhando com uma equipe externa de frontend em React.
+      - Estendi uma API Node.js sobre o MarkLogic e mantive fluxos NiFi que unificam bancos de dados de clientes.
 
-      - Desenvolvi e mantive um frontend em React para um sistema de busca de patentes, implementando recursos como filtragem avançada, ordenação e paginação.
-
-  - organization: Twiage, Powerschool, 100 Open Startups
-    title: Desenvolvedor Backend Freelancer
-    timeframe: Março de 2022 - Outubro de 2022
-    start-date:
-      year: 2022
-      month: 3
-    end-date:
-      year: 2022
-      month: 10
-    location: EUA / São Paulo, Brasil
-    remote: true
-    description: >
-      - Mantive e atualizei uma arquitetura de microsserviços em Node.js, resolvendo dependências legadas e melhorando componentes do frontend em React.
-
-      - Atualizei a infraestrutura e os serviços do AWS EC2, garantindo compatibilidade com os pacotes e dependências mais recentes.
-
-      - Desenvolvi serviços de backend compartilhados utilizando arquitetura Serverless da AWS e TypeScript.
-
-      - Implementei testes unitários e de integração abrangentes para garantir implantações confiáveis e qualidade de código.
+  # Mar 2022 - Out 2022 (Twiage, PowerSchool, retorno à 100 Open Startups) fora do currículo
+  # de propósito. As descrições anteriores estão no histórico do git (branch main).
 
   - organization: ACT Digital
-    title: Desenvolvedor Backend Sênior
+    client: Sodexo
+    title: Tech Lead (promovido de Desenvolvedor Backend Sênior)
     timeframe: Abril de 2020 - Fevereiro de 2022
     start-date:
       year: 2020
@@ -80,11 +65,15 @@ work-experiences:
       month: 2
     location: São Paulo, Brasil
     description: >
-      - Padronizei práticas de desenvolvimento para uma equipe multinacional (América Latina e França) automatizando verificações de qualidade de código com linters, formatadores e Git hooks.
+      - Assumi as funções técnicas quando o projeto perdeu o arquiteto e fui promovido a Tech Lead, liderando backend, frontend e QA com 1:1s, feedbacks e reportes ao PO e à liderança.
 
-      - Construí um backend de `microsser`viços em Node.js e TypeScript usando Azure (App Services, KeyVault, Functions), escalando a plataforma para suportar dezenas de milhares de lojistas ativos.
+      - Liderei o redesenho das integrações solicitado pela matriz da Sodexo na França: elaborei os desenhos de sistema e coordenei as mudanças entre frontend, backend, QA, produto e times de outros países.
 
-      - Projetei modelos de dados no CosmosDB e consolidei bancos de dados internacionais, usando Azure Service Bus para ingerir e sincronizar registros de múltiplas fontes regionais.
+      - Liderei a implantação do SSO corporativo da Sodexo: levantei requisitos com o cliente, dividi o trabalho entre os times e coordenei com a infraestrutura da Sodexo.
+
+      - Construí microsserviços Node.js/TypeScript no Azure (Functions, App Services, Service Bus, CosmosDB), integrando bancos e sistemas de pagamento de outros países da América Latina.
+
+      - Antes da promoção, liderei dois devs backend e defini padrões de código com checagens automatizadas.
 
   - organization: 100 Open Startups
     title: Desenvolvedor Backend
@@ -97,16 +86,16 @@ work-experiences:
       month: 4
     location: São Paulo, Brasil
     description: >
-      - Construí um backend em Node.js e Express do zero para sustentar uma plataforma de gerenciamento de eventos, escalando a API REST para lidar com milhares de usuários simultâneos e altos volumes de solicitações durante eventos de pico.
+      - Construí do zero o backend da empresa como único engenheiro backend, atendendo app, eventos, matchmaking e ferramentas administrativas.
 
-      - Projetei o esquema completo do banco de dados MongoDB e implementei locks customizados em nível de aplicação para garantir a consistência dos dados para operações simultâneas.
+      - Fui responsável pelo MongoDB de ponta a ponta, da modelagem de dados ao controle de concorrência.
 
-      - Desenvolvi um fluxo de trabalho automatizado de agendamento de reuniões usando Amazon SES, SendGrid e SQS, permitindo aos usuários confirmar presença e propor novos horários diretamente via respostas de e-mail.
+      - Construí integrações via webhooks e sincronizações bidirecionais com plataformas como Sympla e SendGrid (Twilio), além de dashboards, atendendo o marketing como cliente interno.
 
-      - Gerenciei implantações e infraestrutura do AWS EC2, construindo APIs personalizadas para alimentar métricas do sistema em ferramentas de monitoramento de desempenho e painéis de relatórios internos.
+      - Construí um agendador de reuniões por e-mail: convidados aceitavam, recusavam ou propunham novo horário respondendo ao e-mail, com respostas capturadas via AWS SES e S3.
 
 education:
-  - institution: Universidade de São Paulo
+  - institution: Universidade de São Paulo (USP)
     location: São Paulo, Brasil
     timeframe: "Fevereiro de 2010 - Dezembro de 2017"
     start-date:
@@ -115,9 +104,9 @@ education:
     end-date:
       year: 2017
       month: 12
-    title: Bacharelado em Engenharia Elétrica
+    title: Graduação em Engenharia Elétrica (incompleta)
     description: >
-      - Foco em engenharia de software, com matérias em algoritmos e estruturas de dados
+      - Aprovado no processo seletivo do duplo diploma USP–École des Mines de Nancy.
   - institution: University of Toronto
     location: Toronto, Canadá
     timeframe: "Janeiro de 2013 - Dezembro de 2013"
@@ -127,44 +116,23 @@ education:
     end-date:
       year: 2013
       month: 12
-    title: Programa de Intercâmbio em Engenharia Elétrica e de Computação
-    description: >
-      - Pesquisa sobre design e análise de filtros eletrônicos
+    title: Intercâmbio em Engenharia Elétrica e de Computação
+    description: ""
 
-certifications:
-  - institution: Coursera - Vanderbilt University
-    location: Online
-    timeframe: "Abril de 2026 - Junho de 2026"
-    start-date:
-      year: 2026
-      month: 4
-    end-date:
-      year: 2026
-      month: 6
-    title: Especialização em Engenharia de Software com IA Generativa
-    description: >
-      - Engenharia de Software e Automação com IA
-  - institution: Universidade de São Paulo
-    location: São Paulo, Brasil
-    timeframe: "Junho de 2012 - Dezembro de 2012"
-    start-date:
-      year: 2012
-      month: 6
-    end-date:
-      year: 2012
-      month: 12
-    title: Programação Orientada a Objetos
-    description: >
-      - Curso de programação orientada a objetos em Java, com foco em padrões de projeto e arquitetura de software
+# Removidos: especialização do Coursera não concluída e curso de POO de 2012 (ver histórico do git).
+certifications: []
 
 skills:
-  familiar:
-    - React
-    - Flutter
-    - Go
-    - "C / C++"
-    - Java
-    - VBA
-    - "HTML / CSS"
-    - Microserviços
-    - Arquitetura Serverless
+  integrations:
+    - APIs REST
+    - webhooks
+    - SSO
+    - SharePoint
+    - SendGrid (Twilio)
+    - Sympla
+    - sistemas RAG
+  practices:
+    - design de sistemas
+    - code review
+    - mentoria
+    - Git

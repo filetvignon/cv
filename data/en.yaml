@@ -6,13 +6,13 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Senior Backend Engineer (Node.js, Python) specializing in highly concurrent architecture and large-scale data pipelines, completely adaptable to fully remote, hybrid, or on-site opportunities worldwide.
-  # Senior Software Engineer specializing in backend development (Node.js, Python) and heavy data pipelines. Experienced in building microservices and highly concurrent applications designed to support tens of thousands of users and high-volume data streams across Azure and AWS environments. Focused on high-availability architecture, ensuring data consistency, and optimizing databases for distributed, international teams.
+    Software engineer with 9+ years of backend experience in Node.js/TypeScript and Python, building APIs, third-party integrations and data pipelines for US and international clients. Built a startup's backend from scratch as its only backend engineer and was promoted to Tech Lead on a multinational project for Sodexo. Known for thorough code reviews, mentoring junior developers, and learning new stacks quickly.
   titles:
-    - Senior Software Engineer
+    - Software Engineer
+  headline: "Software Engineer | Backend, APIs & Integrations"
   location:
     city: São Paulo
-    country: Brazil (Open to Worldwide Remote)
+    country: Brazil (open to remote)
 
 languages:
   - name: Portuguese
@@ -38,88 +38,24 @@ work-experiences:
     end-date:
       year: 2026
       month: 3
-    title: Senior Backend Developer
+    title: Senior Backend Developer (Contract)
     location: USA
     remote: true
     description: >
-      - Built ETL pipelines with Apache NiFi and MarkLogic to process hundreds of thousands of records across multiple formats (SQL, NoSQL, PDFs, triples), handling batch, scheduled, and real-time streams, including files over 1GB.
+      - Built the backend of 4V's in-house search platform from scratch, including the data model and the Apache NiFi flows that pull data and files from many sources into one searchable database.
 
-      - Implemented an OpenAI-powered RAG search system for patent documents, developing the Node.js and Python backend and managing Azure deployments and authentication.
+      - Learned Python and FastAPI on the job to build a new backend from scratch for client DuPont, designing the database and integrating it with the client's RAG system and SharePoint permissions.
 
-      - Improved high-volume data workflows for hundreds of users by writing custom MarkLogic scripts, tuning legacy MySQL queries, and standardizing metadata extraction.
+      - Added permission checks to DuPont's RAG search system, integrating with SharePoint and Azure identity services so search results respected each user's document access.
 
-      - Developed the Python backend for a custom spreadsheet application, integrating AI document summarization and working with an external React frontend team.
+      - Extended a Node.js API over MarkLogic and maintained NiFi flows that merge client databases.
 
-      - Developed and maintained a React frontend for a patent search system, implementing features such as advanced filtering, sorting, and pagination.
-
-  - organization: Twiage, Powerschool, 100 Open Startups
-    title: Freelance Backend Developer
-    timeframe: March 2022 - October 2022
-    start-date:
-      year: 2022
-      month: 3
-    end-date:
-      year: 2022
-      month: 10
-    location: USA / São Paulo, Brazil
-    remote: true
-    description: >
-      - Maintained and updated a Node.js microservices architecture, resolving legacy dependencies and improving React frontend components.
-
-      - Updated AWS EC2 infrastructure and services, ensuring compatibility with the latest packages and dependencies.
-
-      - Developed shared backend services utilizing an AWS Serverless architecture and TypeScript.
-
-      - Implemented comprehensive unit and integration testing to ensure reliable deployments and code quality.
-
-  # - organization: Twiage
-  #   title: Freelance Backend Developer
-  #   timeframe: May 2022 - August 2022
-  #   start-date:
-  #     year: 2022
-  #     month: 5
-  #   end-date:
-  #     year: 2022
-  #     month: 8
-  #   location: USA
-  #   remote: true
-  #   description: >
-  #     - Maintenance and development of a microservices architecture in Node.js
-  # - Update React elements
-  # - Update packages and dependencies
-  # - organization: Powerschool
-  #   title: Freelance Backend Developer
-  #   timeframe: March 2022 - June 2022
-  #   start-date:
-  #     year: 2022
-  #     month: 3
-  #   end-date:
-  #     year: 2022
-  #     month: 6
-  #   location: USA/Canada
-  #   remote: true
-  #   description: >
-  # - Maintenance and development of services that are shared across
-  # different products
-  # - AWS serverless architecture written in TypeScript
-  # - Extensive unit and integration testing
-  # - organization: 100 Open Startups
-  #   title: Freelance  Architect/Tech Lead
-  #   timeframe: March 2022 - October 2022
-  #   start-date:
-  #     year: 2022
-  #     month: 3
-  #   end-date:
-  #     year: 2022
-  #     month: 10
-  #   location: São Paulo, Brazil
-  #   description: >
-  #     - Create designs and specifications for developers to work on
-  #     - Update Node.js and AWS systems
-  #     - Design and work on integrations with third-party systems
+  # Mar 2022 - Oct 2022 (Twiage, PowerSchool, 100 Open Startups return) intentionally left off
+  # the resume. Previous descriptions are in git history (branch main).
 
   - organization: ACT Digital
-    title: Senior Backend Developer
+    client: Sodexo
+    title: Tech Lead (promoted from Senior Backend Developer)
     timeframe: April 2020 - February 2022
     start-date:
       year: 2020
@@ -129,11 +65,15 @@ work-experiences:
       month: 2
     location: São Paulo, Brazil
     description: >
-      - Standardized development practices for a multinational team (LatAm and France) by automating code quality checks with linters, formatters, and Git hooks.
+      - Stepped in after the project lost its architect and was promoted to Tech Lead, leading the backend, frontend and QA teams through 1:1s, feedback, and progress reporting to the PO and leadership.
 
-      - Built a Node.js and TypeScript microservices backend using Azure (App Services, KeyVault, Functions), scaling the platform to support tens of thousands of active store owners.
+      - Led the integration redesign requested by Sodexo's headquarters in France: wrote the system designs and coordinated the changes across frontend, backend, QA, product and other countries' teams.
 
-      - Designed CosmosDB data models and consolidated international databases, using Azure Service Bus to ingest and sync records from multiple regional sources.
+      - Led the rollout of Sodexo's corporate SSO: gathered requirements with the client, split the work across teams, and coordinated with Sodexo's infrastructure team.
+
+      - Built Node.js/TypeScript microservices on Azure (Functions, App Services, Service Bus, CosmosDB), integrating databases and payment systems from other Latin American countries.
+
+      - Before the promotion, led two backend developers and set code standards with automated quality checks.
 
   - organization: 100 Open Startups
     title: Backend Developer
@@ -146,16 +86,16 @@ work-experiences:
       month: 4
     location: São Paulo, Brazil
     description: >
-      - Built a Node.js and Express backend from scratch to power an event management platform, scaling the REST API to handle thousands of concurrent users and high request volumes during peak events.
+      - Built the company's backend from scratch as its only backend engineer, powering the app, the events platform, the matchmaking system and the admin tools.
 
-      - Designed the complete MongoDB database schema and implemented custom application-level locks to guarantee data consistency for concurrent operations.
+      - Owned the MongoDB database end to end, from data modeling to concurrency control.
 
-      - Developed an automated meeting scheduling workflow using Amazon SES, SendGrid, and SQS, allowing users to RSVP and propose new times directly via email replies.
+      - Built webhook integrations and two-way data syncs with third-party platforms, including Sympla and SendGrid (Twilio), plus stats dashboards, working with the marketing team as internal clients.
 
-      - Managed AWS EC2 deployments and infrastructure, building custom APIs to feed system metrics into performance monitoring tools and internal reporting dashboards.
+      - Built an email-based meeting scheduler: invitees could accept, decline or propose a new time by replying to the email, with replies captured through AWS SES and S3 and relayed to the other party.
 
 education:
-  - institution: University of São Paulo
+  - institution: University of São Paulo (USP)
     location: São Paulo, Brazil
     timeframe: "February 2010 - December 2017"
     start-date:
@@ -164,9 +104,9 @@ education:
     end-date:
       year: 2017
       month: 12
-    title: Bachelor's Degree in Electrical Engineering
+    title: Coursework toward a Bachelor's in Electrical Engineering
     description: >
-      - Focused on software engineering, with coursework in algorithms and data structures
+      - Selected for the USP–École des Mines de Nancy double-degree program.
   - institution: University of Toronto
     location: Toronto, Canada
     timeframe: "January 2013 - December 2013"
@@ -176,32 +116,15 @@ education:
     end-date:
       year: 2013
       month: 12
-    title: Exchange program in Electrical and Computer Engineering
-    description: >
-      - Research on design and analysis of electronic filters
+    title: Exchange Program, Electrical and Computer Engineering
+    description: ""
 
-certifications:
-  - institution: Coursera - Vanderbilt University
-    location: Online
-    timeframe: "April 2026 - June 2026"
-    start-date:
-      year: 2026
-      month: 4
-    end-date:
-      year: 2026
-      month: 6
-    title: Generative AI Software Engineering Specialization
-    description: >
-      - AI-Powered Software Engineering and Automation
-  - institution: University of São Paulo
-    location: São Paulo, Brazil
-    timeframe: "June 2012 - December 2012"
-    start-date:
-      year: 2012
-      month: 6
-    end-date:
-      year: 2012
-      month: 12
-    title: Object-Oriented Programming
-    description: >
-      - Object-oriented programming course in Java, with focus on design patterns and software architecture
+# Removed: unfinished Coursera specialization and the 2012 OOP course (see git history).
+certifications: []
+
+skills:
+  practices:
+    - system design
+    - code review
+    - mentoring
+    - Git

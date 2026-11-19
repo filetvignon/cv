@@ -86,7 +86,9 @@
 ]
 
 
+#if cv-data.at("certifications", default: ()).len() > 0 [
 == #headers.certifications
+]
 
 #for cert in cv-data.certifications {
   block(breakable: false)[

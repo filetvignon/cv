@@ -9,10 +9,11 @@ headers:
   education: Education
   skills: Technical Skills
   bio: Professional Summary
-  certifications: Certifications & Continuous Learning
+  certifications: Certifications
 
 tags:
   remote: Remote
+  client: client
   present: Present
 
 skills:
@@ -20,3 +21,8 @@ skills:
   databases: Databases
   infrastructure: Infrastructure
   familiar: Familiar
+  languages-frameworks: Languages & frameworks
+  cloud-data: Cloud & data
+  integrations: Integrations
+  practices: Practices
+  spoken-languages: Spoken languages

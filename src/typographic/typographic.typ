@@ -113,6 +113,9 @@
       } else {
         ()
       }
+      // "client" is only used by the clean template; work-entry doesn't accept it
+      let work = work
+      let _ = work.remove("client", default: none)
       work-entry(
         theme: theme,
         ..work,

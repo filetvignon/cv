@@ -14,6 +14,13 @@ The `pre-push` hook compiles all templates in english and portuguese, stages com
 
 ## Previews
 
+### Clean (recommended)
+
+Custom single-column, one-page template built for ATS parsing. Uses the bundled Inter font in `fonts/`
+(passed by `compile.sh` via `--font-path fonts`), so it renders identically on any machine.
+
+![CV - Clean](./build/clean/svg/cv-en-clean-1.svg)
+
 ### Modernpro
 
 <https://github.com/jxpeng98/Typst-CV-Resume>

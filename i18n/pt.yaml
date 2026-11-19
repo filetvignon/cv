@@ -9,10 +9,11 @@ headers:
   education: Educação
   skills: Habilidades Técnicas
   bio: Resumo Profissional
-  certifications: Certificações & Aprendizado Contínuo
+  certifications: Certificações
 
 tags:
   remote: Remoto
+  client: cliente
   present: Presente
 
 skills:
@@ -20,3 +21,8 @@ skills:
   databases: Bancos de Dados
   infrastructure: Infraestrutura
   familiar: Familiar
+  languages-frameworks: Linguagens e frameworks
+  cloud-data: Nuvem e dados
+  integrations: Integrações
+  practices: Práticas
+  spoken-languages: Idiomas

@@ -5,7 +5,7 @@ build_dir="build"
 if [ -n "$1" ] && [ "$1" != "-" ]; then
   models=$(echo "$1" | tr ',' ' ')
 else
-  models="typographic technical modernpro stephenxu"
+  models="clean typographic technical modernpro stephenxu"
 fi
 
 if [ -n "$2" ] && [ "$2" != "-" ]; then
@@ -45,7 +45,7 @@ compile() {
   fi
   
   echo "Compiling $(upper "$model $format $lang") to $build_dir/$model/$format/$filename"
-  typst compile --input lang="$lang" --format "$format" --root ../../ "src/$model/$model.typ" "$build_dir/$model/$format/$filename"
+  typst compile --font-path fonts --input lang="$lang" --format "$format" --root ../../ "src/$model/$model.typ" "$build_dir/$model/$format/$filename"
 }
 
 for model in $models; do

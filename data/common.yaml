@@ -1,9 +1,9 @@
 contact:
   - type: email
-    display: felipe.vignon@gmail.com
-    link: mailto:felipe.vignon@gmail.com
+    display: fv@felipevignon.com
+    link: mailto:fv@felipevignon.com
     icon: envelope
-    handle: felipe.vignon@gmail.com
+    handle: fv@felipevignon.com
     # icon-padding: 1.3pt
     icon-args:
       solid: true

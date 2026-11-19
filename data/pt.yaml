@@ -6,13 +6,13 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos remotos para clientes dos EUA. Construí sozinho o backend de uma startup e depois, como Tech Lead em um projeto da Sodexo, liderei o redesenho de integrações e a implantação de SSO. Acostumado a assumir sistemas de ponta a ponta e a aprender rápido.
+    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos remotos para clientes dos EUA. Construí sozinho o backend de uma startup e depois, como Tech Lead para a Sodexo, liderei o redesenho de integrações e a implantação de SSO.
   titles:
     - Engenheiro de Software
   headline: "Engenheiro de Software | Node.js, TypeScript e Python · Integrações e Projetos com Clientes"
   location:
     city: São Paulo
-    country: Brasil (vagas remotas)
+    country: Brasil (remoto)
 
 languages:
   - name: Português
@@ -44,7 +44,7 @@ work-experiences:
     description: >
       - Projetei e construí o backend, o modelo de dados e os fluxos de ingestão em Apache NiFi da plataforma de busca interna da 4V, que reúne dados e arquivos de várias fontes em um único banco pesquisável.
 
-      - Aprendi Python no projeto e construí para a DuPont um backend em FastAPI conectado ao sistema RAG do cliente.
+      - Aprendi Python no projeto e construí para a DuPont um backend em FastAPI conectado ao RAG do cliente.
 
       - Implementei permissões por documento na busca RAG da DuPont com SharePoint e identidade do Azure.
 
@@ -65,15 +65,13 @@ work-experiences:
       month: 2
     location: São Paulo, Brasil
     description: >
-      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e depois fui promovido a Tech Lead. Conduzi 1:1s e feedbacks dos times de backend, frontend e QA e reportei o andamento ao PO e à liderança.
+      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e depois fui promovido a Tech Lead. Conduzi 1:1s e feedbacks de backend, frontend e QA e reportei o andamento ao PO e à liderança.
 
       - Liderei o redesenho das integrações pedido pela matriz da Sodexo na França. Elaborei a arquitetura e coordenei as mudanças com frontend, backend, QA, produto e times de outros países.
 
       - Fui responsável pela implantação do SSO corporativo da Sodexo. Levantei os requisitos com o cliente, dividi o trabalho entre os times e acompanhei a configuração com a infraestrutura da Sodexo.
 
-      - Desenvolvi microsserviços em Node.js/TypeScript no Azure (Functions, App Services, Service Bus, CosmosDB) para integrar bancos de dados e sistemas de pagamento de outros países da América Latina.
-
-      - Antes da promoção, liderei dois desenvolvedores backend e defini os padrões de código do time.
+      - Desenvolvi microsserviços Node.js/TypeScript no Azure que integravam bancos e sistemas de pagamento da América Latina, e defini as convenções de código do time, aplicadas com linters, formatadores e Git hooks.
 
   - organization: 100 Open Startups
     title: Desenvolvedor Backend
@@ -86,11 +84,11 @@ work-experiences:
       month: 4
     location: São Paulo, Brasil
     description: >
-      - Como único engenheiro backend, construí o backend do app, dos eventos, do matchmaking e do painel admin.
+      - Como único engenheiro backend, construí o backend do app, eventos, matchmaking e painel admin.
 
       - Cuidei do banco MongoDB, incluindo locks em nível de aplicação para operações concorrentes.
 
-      - Integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais. Também criei dashboards de estatísticas a pedido do time de marketing.
+      - Integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais, e criei dashboards de estatísticas para o time de marketing.
 
       - Criei um agendador de reuniões em que os convidados aceitavam, recusavam ou sugeriam outro horário só respondendo ao e-mail. As respostas eram capturadas com AWS SES e S3 e repassadas.
 
@@ -135,5 +133,6 @@ skills:
     - Design de sistemas
     - Code review
     - CI/CD
-    - Mentoria
+    - Docker
     - Git
+    - Mentoria

@@ -19,15 +19,15 @@
 #set document(..doc-meta)
 #set text(lang: lang)
 
-#set page(paper: paper, margin: (x: 1.6cm, y: 1cm))
-#set text(font: ("Inter", "Verdana", "DejaVu Sans"), size: 9.5pt)
+#set page(paper: paper, margin: (x: 1.3cm, top: 1.1cm, bottom: 0.9cm))
+#set text(font: ("Inter", "Verdana", "DejaVu Sans"), size: 10pt)
 #set par(leading: 0.55em, justify: false)
-#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.4em)
+#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.45em)
 #show "third-party": it => box(it)
 
 #let section(title) = {
-  v(0.4em)
-  text(size: 10pt, weight: "bold", fill: accent, tracking: 0.08em, upper(title))
+  v(0.5em)
+  text(size: 10.5pt, weight: "bold", fill: accent, tracking: 0.08em, upper(title))
   v(-0.55em)
   line(length: 100%, stroke: 0.6pt + accent.lighten(60%))
   v(0.15em)

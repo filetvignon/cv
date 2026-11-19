@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Software engineer with 10 years of experience building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including 3+ years working remotely for US clients. Built a startup's backend from scratch as its only backend engineer, then led an integration redesign and an SSO rollout as Tech Lead on a Sodexo project. Comfortable owning systems end to end and learning new stacks quickly.
+    Software engineer with 10 years of experience building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including 3+ years working remotely with US clients. Built a startup's backend as its only backend engineer, then led an integration redesign and SSO rollout as Tech Lead for Sodexo.
   titles:
     - Software Engineer
   headline: "Software Engineer | Node.js, TypeScript & Python · Integrations & Client Projects"
@@ -71,9 +71,7 @@ work-experiences:
 
       - Owned the rollout of Sodexo's corporate SSO. Gathered requirements with the client, split the work across teams, and worked with Sodexo's infrastructure team on the setup.
 
-      - Developed Node.js/TypeScript microservices on Azure (Functions, App Services, Service Bus, CosmosDB) to integrate databases and payment systems from other Latin American countries.
-
-      - Before the promotion, led two backend developers and set coding standards backed by automated checks.
+      - Developed Node.js/TypeScript microservices on Azure integrating databases and payment systems across Latin America, and defined the team's code conventions, enforced with linters, formatters, and Git hooks.
 
   - organization: 100 Open Startups
     title: Backend Developer
@@ -86,11 +84,11 @@ work-experiences:
       month: 4
     location: São Paulo, Brazil
     description: >
-      - As the only backend engineer, built everything behind the app, events platform, matchmaking, and admin tools.
+      - As the only backend engineer, built the backend for the app, events platform, matchmaking, and admin.
 
       - Owned the MongoDB database, including application-level locks for concurrent operations.
 
-      - Integrated third-party platforms such as Sympla and Twilio SendGrid through webhooks and two-way data syncs. Also built stats dashboards for the marketing team based on their requests.
+      - Integrated third-party platforms such as Sympla and Twilio SendGrid through webhooks and two-way data syncs, and built stats dashboards for the marketing team.
 
       - Created an email-based meeting scheduler where invitees could accept, decline, or suggest a new time just by replying. Replies were captured with AWS SES and S3 and forwarded to the other person.
 
@@ -127,5 +125,6 @@ skills:
     - System design
     - Code review
     - CI/CD
-    - Mentoring
+    - Docker
     - Git
+    - Mentoring

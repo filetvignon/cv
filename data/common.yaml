@@ -96,7 +96,6 @@ skills:
     - "Azure (App Services, Functions, Service Bus)"
     - "AWS (EC2, S3, SES, SQS)"
     - Apache NiFi
-    - Docker
   integrations:
     - REST APIs
     - Webhooks

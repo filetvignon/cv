@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Software engineer with nearly 10 years building Node.js/TypeScript and Python systems: APIs, data pipelines and third-party integrations, including 3+ years working remotely with US clients. Built a startup's backend from scratch as its sole backend engineer, and as Tech Lead for Sodexo led an integration redesign and SSO rollout directly with the client's headquarters. Comfortable owning systems end to end, turning client requirements into working software, and ramping up fast on new stacks.
+    Software engineer with 10 years of experience building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including more than three years working remotely for US clients. Built a startup's backend from scratch as its only backend engineer. As Tech Lead on a Sodexo project, led an integration redesign and an SSO rollout, working directly with the client's headquarters. Comfortable owning systems end to end and picking up new stacks quickly.
   titles:
     - Software Engineer
   headline: "Software Engineer | Node.js, TypeScript & Python · Integrations & Client Projects"
@@ -42,13 +42,13 @@ work-experiences:
     location: USA
     remote: true
     description: >
-      - Built the backend of 4V's in-house search platform from scratch, including the data model and the Apache NiFi flows that pull data and files from many sources into one searchable database.
+      - Designed and built the backend, data model, and Apache NiFi ingestion flows for 4V's in-house search platform, which pulls data and files from many sources into one searchable database.
 
-      - Learned Python and FastAPI on the job to build a new backend from scratch for client DuPont, designing the database and integrating it with the client's RAG system and SharePoint permissions.
+      - Learned Python and FastAPI on the job to build a new backend for DuPont, designing its database and connecting it to the client's RAG system.
 
-      - Added permission checks to DuPont's RAG search system, integrating with SharePoint and Azure identity services so search results respected each user's document access.
+      - Added document-level permission checks to DuPont's RAG search, using SharePoint and Azure identity data so each user only sees what they are allowed to access.
 
-      - Extended a Node.js API over MarkLogic and maintained NiFi flows that merge client databases.
+      - Extended a Node.js API on top of MarkLogic and maintained NiFi flows that consolidate client databases.
 
   # Mar 2022 - Oct 2022 (Twiage, PowerSchool, 100 Open Startups return) intentionally left off
   # the resume. Previous descriptions are in git history (branch main).
@@ -65,15 +65,15 @@ work-experiences:
       month: 2
     location: São Paulo, Brazil
     description: >
-      - Stepped in after the project lost its architect and was promoted to Tech Lead, leading the backend, frontend and QA teams through 1:1s, feedback, and progress reporting to the PO and leadership.
+      - Took over technical leadership when the project lost its architect and was promoted to Tech Lead, running 1:1s and feedback for the backend, frontend, and QA teams and reporting progress to the PO and leadership.
 
-      - Led the integration redesign requested by Sodexo's headquarters in France: wrote the system designs and coordinated the changes across frontend, backend, QA, product and other countries' teams.
+      - Led the integration redesign requested by Sodexo's headquarters in France, writing the system designs and coordinating changes across frontend, backend, QA, product, and teams in other countries.
 
-      - Led the rollout of Sodexo's corporate SSO: gathered requirements with the client, split the work across teams, and coordinated with Sodexo's infrastructure team.
+      - Owned the rollout of Sodexo's corporate SSO, from gathering requirements with the client to splitting the work across teams and coordinating with their infrastructure team.
 
-      - Built Node.js/TypeScript microservices on Azure (Functions, App Services, Service Bus, CosmosDB), integrating databases and payment systems from other Latin American countries.
+      - Developed Node.js/TypeScript microservices on Azure (Functions, App Services, Service Bus, CosmosDB) that integrated databases and payment systems from other Latin American countries.
 
-      - Before the promotion, led two backend developers and set code standards with automated quality checks.
+      - Before the promotion, led two backend developers and set coding standards backed by automated checks.
 
   - organization: 100 Open Startups
     title: Backend Developer
@@ -86,13 +86,13 @@ work-experiences:
       month: 4
     location: São Paulo, Brazil
     description: >
-      - Built the company's backend from scratch as its only backend engineer, powering the app, the events platform, the matchmaking system and the admin tools.
+      - As the sole backend engineer, designed and built the backend behind the company's app, events platform, matchmaking system, and admin tools.
 
-      - Owned the MongoDB database end to end, from data modeling to concurrency control.
+      - Owned the MongoDB database, from data modeling to concurrency control.
 
-      - Built webhook integrations and two-way data syncs with third-party platforms, including Sympla and SendGrid (Twilio), plus stats dashboards, working with the marketing team as internal clients.
+      - Integrated third-party platforms such as Sympla and SendGrid (Twilio) through webhooks and two-way data syncs, and built stats dashboards with requirements gathered directly from the marketing team.
 
-      - Built an email-based meeting scheduler: invitees could accept, decline or propose a new time by replying to the email, with replies captured through AWS SES and S3 and relayed to the other party.
+      - Created an email-based meeting scheduler that let invitees accept, decline, or suggest a new time just by replying to the email, using AWS SES and S3 to capture and relay the replies.
 
 education:
   - institution: University of São Paulo (USP)

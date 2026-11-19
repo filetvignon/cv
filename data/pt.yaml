@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software com quase 10 anos criando sistemas em Node.js/TypeScript e Python: APIs, pipelines de dados e integrações, incluindo mais de 3 anos em trabalho remoto para clientes dos EUA. Construí do zero o backend de uma startup como único engenheiro backend e, como Tech Lead para a Sodexo, liderei o redesenho de integrações e o SSO junto à matriz do cliente. Acostumado a assumir sistemas de ponta a ponta, transformar requisitos de clientes em software e me adaptar rápido a novas tecnologias.
+    Engenheiro de software com 10 anos de experiência desenvolvendo APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de três anos em trabalho remoto para clientes dos EUA. Construí do zero o backend de uma startup como único engenheiro backend. Como Tech Lead em um projeto da Sodexo, liderei o redesenho de integrações e a implantação de SSO, trabalhando diretamente com a matriz do cliente. Acostumado a assumir sistemas de ponta a ponta e a aprender rápido.
   titles:
     - Engenheiro de Software
   headline: "Engenheiro de Software | Node.js, TypeScript e Python · Integrações e Projetos com Clientes"
@@ -42,13 +42,13 @@ work-experiences:
     location: EUA
     remote: true
     description: >
-      - Construí do zero o backend da plataforma de busca interna da 4V, incluindo o modelo de dados e os fluxos Apache NiFi que reúnem dados e arquivos de várias fontes em um único banco pesquisável.
+      - Projetei e construí o backend, o modelo de dados e os fluxos de ingestão em Apache NiFi da plataforma de busca interna da 4V, que reúne dados e arquivos de várias fontes em um único banco pesquisável.
 
-      - Aprendi Python e FastAPI no trabalho para construir do zero um backend para o cliente DuPont, modelando o banco e integrando-o ao sistema RAG e às permissões do SharePoint.
+      - Aprendi Python e FastAPI no próprio projeto para construir um novo backend para a DuPont, modelando o banco de dados e conectando-o ao sistema RAG do cliente.
 
-      - Adicionei controle de permissões ao sistema de busca RAG da DuPont, integrando SharePoint e identidade do Azure para que cada usuário visse só os documentos a que tem acesso.
+      - Implementei controle de permissões por documento na busca RAG da DuPont, usando dados do SharePoint e da identidade do Azure para que cada usuário veja apenas o que tem permissão para acessar.
 
-      - Estendi uma API Node.js sobre o MarkLogic e mantive fluxos NiFi que unificam bancos de dados de clientes.
+      - Estendi uma API Node.js sobre o MarkLogic e mantive fluxos NiFi que consolidam bancos de clientes.
 
   # Mar 2022 - Out 2022 (Twiage, PowerSchool, retorno à 100 Open Startups) fora do currículo
   # de propósito. As descrições anteriores estão no histórico do git (branch main).
@@ -65,15 +65,15 @@ work-experiences:
       month: 2
     location: São Paulo, Brasil
     description: >
-      - Assumi as funções técnicas quando o projeto perdeu o arquiteto e fui promovido a Tech Lead, liderando backend, frontend e QA com 1:1s, feedbacks e reportes ao PO e à liderança.
+      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e fui promovido a Tech Lead, conduzindo 1:1s e feedbacks dos times de backend, frontend e QA e reportando o andamento ao PO e à liderança.
 
-      - Liderei o redesenho das integrações solicitado pela matriz da Sodexo na França: elaborei os desenhos de sistema e coordenei as mudanças entre frontend, backend, QA, produto e times de outros países.
+      - Liderei o redesenho das integrações solicitado pela matriz da Sodexo na França, elaborando a arquitetura e coordenando as mudanças entre frontend, backend, QA, produto e times de outros países.
 
-      - Liderei a implantação do SSO corporativo da Sodexo: levantei requisitos com o cliente, dividi o trabalho entre os times e coordenei com a infraestrutura da Sodexo.
+      - Conduzi a implantação do SSO corporativo da Sodexo, do levantamento de requisitos com o cliente à divisão do trabalho entre os times e à coordenação com a equipe de infraestrutura.
 
-      - Construí microsserviços Node.js/TypeScript no Azure (Functions, App Services, Service Bus, CosmosDB), integrando bancos e sistemas de pagamento de outros países da América Latina.
+      - Desenvolvi microsserviços em Node.js/TypeScript no Azure (Functions, App Services, Service Bus, CosmosDB) que integravam bancos de dados e sistemas de pagamento de outros países da América Latina.
 
-      - Antes da promoção, liderei dois devs backend e defini padrões de código com checagens automatizadas.
+      - Antes da promoção, liderei dois desenvolvedores backend e defini os padrões de código do time.
 
   - organization: 100 Open Startups
     title: Desenvolvedor Backend
@@ -86,13 +86,13 @@ work-experiences:
       month: 4
     location: São Paulo, Brasil
     description: >
-      - Construí do zero o backend da empresa como único engenheiro backend, atendendo app, eventos, matchmaking e ferramentas administrativas.
+      - Como único engenheiro backend, projetei e construí o backend do app, da plataforma de eventos, do matchmaking e das ferramentas administrativas.
 
-      - Fui responsável pelo MongoDB de ponta a ponta, da modelagem de dados ao controle de concorrência.
+      - Fui responsável pelo banco MongoDB, da modelagem de dados ao controle de concorrência.
 
-      - Construí integrações via webhooks e sincronizações bidirecionais com plataformas como Sympla e SendGrid (Twilio), além de dashboards, atendendo o marketing como cliente interno.
+      - Integrei plataformas como Sympla e SendGrid (Twilio) via webhooks e sincronizações bidirecionais, e criei dashboards de estatísticas com requisitos do time de marketing.
 
-      - Construí um agendador de reuniões por e-mail: convidados aceitavam, recusavam ou propunham novo horário respondendo ao e-mail, com respostas capturadas via AWS SES e S3.
+      - Criei um agendador de reuniões por e-mail em que os convidados aceitavam, recusavam ou sugeriam outro horário apenas respondendo ao e-mail, usando AWS SES e S3 para capturar e repassar as respostas.
 
 education:
   - institution: Universidade de São Paulo (USP)

@@ -2,6 +2,10 @@
 #import "package.typ": *
 #import "../common.typ": *
 
+// PDF metadata (defined in common.typ)
+#set document(..doc-meta)
+#set text(lang: lang)
+
 #let profile = cv-data.profile
 #let contact = (
   cv-data

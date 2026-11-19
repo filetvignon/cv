@@ -15,20 +15,8 @@
 #let profile = cv-data.profile
 #let tags = translate("tags")
 
-// PDF metadata. These live here (not only in common.typ) because `set` rules
-// in an imported module don't apply to the importing document.
-#let full-name = profile.first-name + " " + profile.last-name
-#set document(
-  title: full-name + " – " + translate("document-title"),
-  author: full-name,
-  description: profile.at("headline", default: profile.titles.join(", ")),
-  keywords: (
-    profile.titles
-      + cv-data.at("skills", default: (:)).values().flatten()
-      + cv-data.work-experiences.map(w => w.organization)
-  ).dedup(),
-  date: auto,
-)
+// PDF metadata (defined in common.typ)
+#set document(..doc-meta)
 #set text(lang: lang)
 
 #set page(paper: "a4", margin: (x: 1.6cm, y: 1.1cm))

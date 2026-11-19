@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Software engineer with 10 years of experience building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including more than three years working remotely for US clients. Built a startup's backend from scratch as its only backend engineer. As Tech Lead on a Sodexo project, led an integration redesign and an SSO rollout, working directly with the client's headquarters. Comfortable owning systems end to end and picking up new stacks quickly.
+    Software engineer with 10 years of experience building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including more than three years working remotely for US clients. Built a startup's backend from scratch as its only backend engineer. Later, as Tech Lead on a Sodexo project, led an integration redesign and an SSO rollout with the client's headquarters. Comfortable owning systems end to end and learning new stacks quickly.
   titles:
     - Software Engineer
   headline: "Software Engineer | Node.js, TypeScript & Python · Integrations & Client Projects"
@@ -44,9 +44,9 @@ work-experiences:
     description: >
       - Designed and built the backend, data model, and Apache NiFi ingestion flows for 4V's in-house search platform, which pulls data and files from many sources into one searchable database.
 
-      - Learned Python and FastAPI on the job to build a new backend for DuPont, designing its database and connecting it to the client's RAG system.
+      - Learned Python on the job and built a new FastAPI backend for DuPont. Designed its database and connected it to the client's RAG system.
 
-      - Added document-level permission checks to DuPont's RAG search, using SharePoint and Azure identity data so each user only sees what they are allowed to access.
+      - Added document-level permission checks to DuPont's RAG search based on SharePoint and Azure identity data, so users only see documents they have access to.
 
       - Extended a Node.js API on top of MarkLogic and maintained NiFi flows that consolidate client databases.
 
@@ -65,13 +65,13 @@ work-experiences:
       month: 2
     location: São Paulo, Brazil
     description: >
-      - Took over technical leadership when the project lost its architect and was promoted to Tech Lead, running 1:1s and feedback for the backend, frontend, and QA teams and reporting progress to the PO and leadership.
+      - Took over technical leadership when the project lost its architect, and was later promoted to Tech Lead. Ran 1:1s and feedback for the backend, frontend, and QA teams and reported progress to the PO and leadership.
 
-      - Led the integration redesign requested by Sodexo's headquarters in France, writing the system designs and coordinating changes across frontend, backend, QA, product, and teams in other countries.
+      - Led the integration redesign requested by Sodexo's headquarters in France. Wrote the system designs and coordinated the changes with frontend, backend, QA, product, and teams in other countries.
 
-      - Owned the rollout of Sodexo's corporate SSO, from gathering requirements with the client to splitting the work across teams and coordinating with their infrastructure team.
+      - Owned the rollout of Sodexo's corporate SSO. Gathered requirements with the client, split the work across teams, and worked with Sodexo's infrastructure team on the setup.
 
-      - Developed Node.js/TypeScript microservices on Azure (Functions, App Services, Service Bus, CosmosDB) that integrated databases and payment systems from other Latin American countries.
+      - Developed Node.js/TypeScript microservices on Azure (Functions, App Services, Service Bus, CosmosDB) to integrate databases and payment systems from other Latin American countries.
 
       - Before the promotion, led two backend developers and set coding standards backed by automated checks.
 
@@ -86,13 +86,13 @@ work-experiences:
       month: 4
     location: São Paulo, Brazil
     description: >
-      - As the sole backend engineer, designed and built the backend behind the company's app, events platform, matchmaking system, and admin tools.
+      - Was the company's only backend engineer and built everything behind its app, events platform, matchmaking system, and admin tools.
 
-      - Owned the MongoDB database, from data modeling to concurrency control.
+      - Owned the MongoDB database, including application-level locks for concurrent operations.
 
-      - Integrated third-party platforms such as Sympla and SendGrid (Twilio) through webhooks and two-way data syncs, and built stats dashboards with requirements gathered directly from the marketing team.
+      - Integrated third-party platforms such as Sympla and SendGrid (Twilio) through webhooks and two-way data syncs. Also built stats dashboards for the marketing team based on their requests.
 
-      - Created an email-based meeting scheduler that let invitees accept, decline, or suggest a new time just by replying to the email, using AWS SES and S3 to capture and relay the replies.
+      - Created an email-based meeting scheduler where invitees could accept, decline, or suggest a new time just by replying. Replies were captured with AWS SES and S3 and forwarded to the other person.
 
 education:
   - institution: University of São Paulo (USP)

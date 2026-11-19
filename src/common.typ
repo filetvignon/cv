@@ -82,13 +82,26 @@
 #let headers = translate("headers")
 #let skills_translations = translate("skills")
 
-#set text(lang: lang)
-#set document(
-  title: cv-data.profile.at("first-name", default: "") + " " + cv-data.profile.at("last-name", default: ""),
-  description: "Curriculum Vitae of "
-    + cv-data.profile.at("first-name", default: "")
-    + " "
-    + cv-data.profile.at("last-name", default: ""),
+// PDF metadata, defined once for every template.
+// `set` rules don't carry across #import, so each template applies it with:
+//   #set document(..doc-meta)
+//   #set text(lang: lang)
+#let full-name = (
+  cv-data.profile.at("first-name", default: "") + " " + cv-data.profile.at("last-name", default: "")
+)
+#let doc-meta = (
+  title: full-name + " – " + translate("document-title"),
+  author: full-name,
+  description: cv-data.profile.at(
+    "headline",
+    default: cv-data.profile.at("titles", default: ()).join(", "),
+  ),
+  keywords: (
+    cv-data.profile.at("titles", default: ())
+      + cv-data.at("skills", default: (:)).values().flatten()
+      + cv-data.at("work-experiences", default: ()).map(w => w.organization)
+  ).dedup(),
+  date: auto,
 )
 
 

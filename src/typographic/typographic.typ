@@ -1,5 +1,9 @@
 #import "./package.typ": *
 #import "../common.typ": *
+
+// PDF metadata (defined in common.typ)
+#set document(..doc-meta)
+#set text(lang: lang)
 #import "@preview/fontawesome:0.6.0": *
 #import "@preview/to-stuff:0.5.1" as to
 

@@ -2,6 +2,7 @@
 #import "package.typ": *
 #import "../common.typ": *
 
+
 // Put your personal information here, replacing mine
 #let profile = cv-data.profile
 #let contact = (
@@ -31,6 +32,11 @@
   author-position: left,
   personal-info-position: left,
 )
+
+// PDF metadata (defined in common.typ). Applied after resume.with(),
+// which sets its own document title.
+#set document(..doc-meta)
+#set text(lang: lang)
 
 /*
  * Lines that start with == are formatted into section headings

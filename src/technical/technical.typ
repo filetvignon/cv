@@ -1,5 +1,6 @@
 #import "./package.typ": *
 #import "../common.typ": *
+
 #import "@preview/cmarker:0.1.8"
 
 #let profile = cv-data.profile
@@ -40,6 +41,11 @@
   github-username: github,
   lang: lang,
 )
+
+// PDF metadata (defined in common.typ). Applied after resume.with(),
+// which sets its own document title.
+#set document(..doc-meta)
+#set text(lang: lang)
 
 // Use custom-title function instead of first-level headings to customize the
 // size between two sections by specifying the `spacingBetween` argument.

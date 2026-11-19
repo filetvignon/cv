@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software com 10 anos de experiência desenvolvendo APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de três anos em trabalho remoto para clientes dos EUA. Construí do zero o backend de uma startup como único engenheiro backend. Como Tech Lead em um projeto da Sodexo, liderei o redesenho de integrações e a implantação de SSO, trabalhando diretamente com a matriz do cliente. Acostumado a assumir sistemas de ponta a ponta e a aprender rápido.
+    Engenheiro de software com 10 anos de experiência desenvolvendo APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de três anos em trabalho remoto para clientes dos EUA. Construí do zero o backend de uma startup como único engenheiro backend. Depois, como Tech Lead em um projeto da Sodexo, liderei o redesenho de integrações e a implantação de SSO junto à matriz do cliente. Acostumado a assumir sistemas de ponta a ponta e a aprender rápido.
   titles:
     - Engenheiro de Software
   headline: "Engenheiro de Software | Node.js, TypeScript e Python · Integrações e Projetos com Clientes"
@@ -38,15 +38,15 @@ work-experiences:
     end-date:
       year: 2026
       month: 3
-    title: Desenvolvedor Backend Sênior (Contrato)
+    title: Desenvolvedor Backend Sênior
     location: EUA
     remote: true
     description: >
       - Projetei e construí o backend, o modelo de dados e os fluxos de ingestão em Apache NiFi da plataforma de busca interna da 4V, que reúne dados e arquivos de várias fontes em um único banco pesquisável.
 
-      - Aprendi Python e FastAPI no próprio projeto para construir um novo backend para a DuPont, modelando o banco de dados e conectando-o ao sistema RAG do cliente.
+      - Aprendi Python no próprio projeto e construí um novo backend em FastAPI para a DuPont. Modelei o banco de dados e o conectei ao sistema RAG do cliente.
 
-      - Implementei controle de permissões por documento na busca RAG da DuPont, usando dados do SharePoint e da identidade do Azure para que cada usuário veja apenas o que tem permissão para acessar.
+      - Implementei controle de permissões por documento na busca RAG da DuPont com base em dados do SharePoint e da identidade do Azure, para que cada usuário veja só o que pode acessar.
 
       - Estendi uma API Node.js sobre o MarkLogic e mantive fluxos NiFi que consolidam bancos de clientes.
 
@@ -65,13 +65,13 @@ work-experiences:
       month: 2
     location: São Paulo, Brasil
     description: >
-      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e fui promovido a Tech Lead, conduzindo 1:1s e feedbacks dos times de backend, frontend e QA e reportando o andamento ao PO e à liderança.
+      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e depois fui promovido a Tech Lead. Conduzi 1:1s e feedbacks dos times de backend, frontend e QA e reportei o andamento ao PO e à liderança.
 
-      - Liderei o redesenho das integrações solicitado pela matriz da Sodexo na França, elaborando a arquitetura e coordenando as mudanças entre frontend, backend, QA, produto e times de outros países.
+      - Liderei o redesenho das integrações pedido pela matriz da Sodexo na França. Elaborei a arquitetura e coordenei as mudanças com frontend, backend, QA, produto e times de outros países.
 
-      - Conduzi a implantação do SSO corporativo da Sodexo, do levantamento de requisitos com o cliente à divisão do trabalho entre os times e à coordenação com a equipe de infraestrutura.
+      - Fui responsável pela implantação do SSO corporativo da Sodexo. Levantei os requisitos com o cliente, dividi o trabalho entre os times e acompanhei a configuração com a infraestrutura da Sodexo.
 
-      - Desenvolvi microsserviços em Node.js/TypeScript no Azure (Functions, App Services, Service Bus, CosmosDB) que integravam bancos de dados e sistemas de pagamento de outros países da América Latina.
+      - Desenvolvi microsserviços em Node.js/TypeScript no Azure (Functions, App Services, Service Bus, CosmosDB) para integrar bancos de dados e sistemas de pagamento de outros países da América Latina.
 
       - Antes da promoção, liderei dois desenvolvedores backend e defini os padrões de código do time.
 
@@ -86,13 +86,13 @@ work-experiences:
       month: 4
     location: São Paulo, Brasil
     description: >
-      - Como único engenheiro backend, projetei e construí o backend do app, da plataforma de eventos, do matchmaking e das ferramentas administrativas.
+      - Fui o único engenheiro backend da empresa e construí tudo o que sustentava o app, a plataforma de eventos, o matchmaking e as ferramentas administrativas.
 
-      - Fui responsável pelo banco MongoDB, da modelagem de dados ao controle de concorrência.
+      - Cuidei do banco MongoDB, incluindo locks em nível de aplicação para operações concorrentes.
 
-      - Integrei plataformas como Sympla e SendGrid (Twilio) via webhooks e sincronizações bidirecionais, e criei dashboards de estatísticas com requisitos do time de marketing.
+      - Integrei plataformas como Sympla e SendGrid (Twilio) via webhooks e sincronizações bidirecionais. Também criei dashboards de estatísticas a pedido do time de marketing.
 
-      - Criei um agendador de reuniões por e-mail em que os convidados aceitavam, recusavam ou sugeriam outro horário apenas respondendo ao e-mail, usando AWS SES e S3 para capturar e repassar as respostas.
+      - Criei um agendador de reuniões em que os convidados aceitavam, recusavam ou sugeriam outro horário só respondendo ao e-mail. As respostas eram capturadas com AWS SES e S3 e repassadas.
 
 education:
   - institution: Universidade de São Paulo (USP)

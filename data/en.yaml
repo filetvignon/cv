@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Software engineer with 9+ years of backend experience in Node.js/TypeScript and Python, building APIs, third-party integrations and data pipelines for US and international clients. Built a startup's backend from scratch as its only backend engineer and was promoted to Tech Lead on a multinational project for Sodexo. Known for thorough code reviews, mentoring junior developers, and learning new stacks quickly.
+    Backend-focused software engineer with 9+ years building Node.js/TypeScript and Python services: APIs, third-party integrations and data pipelines. Built a startup's backend from scratch as its sole backend engineer, led an integration redesign and SSO rollout as Tech Lead for Sodexo, and spent 3+ years as a remote contractor for US clients. Comfortable owning systems end to end, working directly with stakeholders, and ramping up fast on unfamiliar codebases.
   titles:
     - Software Engineer
   headline: "Software Engineer | Backend, APIs & Integrations"

@@ -33,15 +33,25 @@ upper() {
 
 
 
+doc_name() {
+  case "$1" in
+    pt) echo "Felipe-Vignon-Curriculo" ;;
+    *) echo "Felipe-Vignon-Resume" ;;
+  esac
+}
+
 compile() {
   model="$1"
   format="$2"
   lang="$3"
 
-  filename="cv-$lang-$model.$format"
+  # Recruiters see the file name, so name it after the person, not the template.
+  # Each template still has its own folder: build/<model>/<format>/
+  base="$(doc_name "$lang")"
+  filename="$base.$format"
 
   if [ "$format" = "svg" ] || [ "$format" = "png" ]; then
-    filename="cv-$lang-$model-{0p}.$format"
+    filename="$base-{0p}.$format"
   fi
   
   echo "Compiling $(upper "$model $format $lang") to $build_dir/$model/$format/$filename"

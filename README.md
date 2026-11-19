@@ -19,34 +19,34 @@ The `pre-push` hook compiles all templates in english and portuguese, stages com
 Custom single-column, one-page template built for ATS parsing. Uses the bundled Inter font in `fonts/`
 (passed by `compile.sh` via `--font-path fonts`), so it renders identically on any machine.
 
-![CV - Clean](./build/clean/svg/cv-en-clean-1.svg)
+![CV - Clean](./build/clean/svg/Felipe-Vignon-Resume-1.svg)
 
 ### Modernpro
 
 <https://github.com/jxpeng98/Typst-CV-Resume>
 
-![CV - Modernpro](./build/modernpro/svg/cv-en-modernpro-1.svg)
-![CV - Modernpro](./build/modernpro/svg/cv-en-modernpro-2.svg)
+![CV - Modernpro](./build/modernpro/svg/Felipe-Vignon-Resume-1.svg)
+![CV - Modernpro](./build/modernpro/svg/Felipe-Vignon-Resume-2.svg)
 
 ### StephenXu
 
 <https://github.com/stuxf/basic-typst-resume-template>
 
-![CV - StephenXu](./build/stephenxu/svg/cv-en-stephenxu-1.svg)
-![CV - StephenXu](./build/stephenxu/svg/cv-en-stephenxu-2.svg)
+![CV - StephenXu](./build/stephenxu/svg/Felipe-Vignon-Resume-1.svg)
+![CV - StephenXu](./build/stephenxu/svg/Felipe-Vignon-Resume-2.svg)
 
 ### Technical
 
 <https://github.com/steadyfall/simple-technical-resume-template>
 
-![CV - Technical](./build/technical/svg/cv-en-technical-1.svg)
-![CV - Technical](./build/technical/svg/cv-en-technical-2.svg)
+![CV - Technical](./build/technical/svg/Felipe-Vignon-Resume-1.svg)
+![CV - Technical](./build/technical/svg/Felipe-Vignon-Resume-2.svg)
 
 ### Typographic
 
 <https://github.com/tsnobip/typst-typographic-resume>
 
-![CV - Typographic](./build/typographic/svg/cv-en-typographic-1.svg)
+![CV - Typographic](./build/typographic/svg/Felipe-Vignon-Resume-1.svg)
 
 ## Other templates
 

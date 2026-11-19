@@ -15,8 +15,8 @@ echo "pre-push: compiling Typst CV..."
 echo "pre-push: staging generated build files..."
 git add build/
 
-# only check SVG files, since PDFs always show in the diff even if they are unchanged
-if git diff --cached --quiet -- build/svg; then
+# only check SVG files (build/<template>/svg/), since PDFs always show in the diff even if they are unchanged
+if git diff --cached --quiet -- ':(glob)build/*/svg/*.svg'; then
   echo "pre-push: build/ files unchanged; nothing to amend"
   # PDFs always show in the diff, even if they are unchanged, so we need to restore them
   git restore --staged --worktree build/

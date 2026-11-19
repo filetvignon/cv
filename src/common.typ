@@ -33,6 +33,19 @@
   panic("Invalid language: " + lang + ". Supported languages are: " + valid-langs.join(","))
 }
 
+// Paper size: `--input paper=<size>` (any Typst paper name, e.g. "a4", "us-letter";
+// "letter" is accepted as an alias). Defaults to US Letter for English, A4 otherwise.
+#let paper = {
+  let p = inputs.at("paper", default: none)
+  if p == none or p == "" {
+    if lang == "en" { "us-letter" } else { "a4" }
+  } else if p == "letter" {
+    "us-letter"
+  } else {
+    p
+  }
+}
+
 
 #let data-dir = "../data/"
 #let lang-data = yaml(data-dir + lang + ".yaml")
@@ -89,6 +102,16 @@
 #let full-name = (
   cv-data.profile.at("first-name", default: "") + " " + cv-data.profile.at("last-name", default: "")
 )
+// "Azure (App Services, Functions)" -> ("Azure", "Azure App Services", "Azure Functions"),
+// so PDF keywords stay valid when split on commas.
+#let expand-keyword(k) = {
+  let m = k.match(regex("^(.+?)\s*\((.+)\)$"))
+  if m == none { (k,) } else {
+    let base = m.captures.at(0)
+    (base,) + m.captures.at(1).split(",").map(x => base + " " + x.trim())
+  }
+}
+
 #let doc-meta = (
   title: full-name + " – " + translate("document-title"),
   author: full-name,
@@ -98,7 +121,7 @@
   ),
   keywords: (
     cv-data.profile.at("titles", default: ())
-      + cv-data.at("skills", default: (:)).values().flatten()
+      + cv-data.at("skills", default: (:)).values().flatten().map(expand-keyword).flatten()
       + cv-data.at("work-experiences", default: ()).map(w => w.organization)
   ).dedup(),
   date: auto,

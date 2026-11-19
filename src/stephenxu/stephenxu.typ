@@ -28,7 +28,7 @@
   phone: contact.phone.display,
   accent-color: "#26428b",
   font: "New Computer Modern",
-  paper: "us-letter",
+  paper: paper,
   author-position: left,
   personal-info-position: left,
 )

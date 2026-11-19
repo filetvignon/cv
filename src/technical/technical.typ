@@ -40,6 +40,7 @@
   linkedin-user-id: linkedin,
   github-username: github,
   lang: lang,
+  paper: paper,
 )
 
 // PDF metadata (defined in common.typ). Applied after resume.with(),

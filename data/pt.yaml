@@ -6,7 +6,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software com 10 anos de experiência desenvolvendo APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de três anos em trabalho remoto para clientes dos EUA. Construí do zero o backend de uma startup como único engenheiro backend. Depois, como Tech Lead em um projeto da Sodexo, liderei o redesenho de integrações e a implantação de SSO junto à matriz do cliente. Acostumado a assumir sistemas de ponta a ponta e a aprender rápido.
+    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos remotos para clientes dos EUA. Construí sozinho o backend de uma startup e depois, como Tech Lead em um projeto da Sodexo, liderei o redesenho de integrações e a implantação de SSO. Acostumado a assumir sistemas de ponta a ponta e a aprender rápido.
   titles:
     - Engenheiro de Software
   headline: "Engenheiro de Software | Node.js, TypeScript e Python · Integrações e Projetos com Clientes"
@@ -44,9 +44,9 @@ work-experiences:
     description: >
       - Projetei e construí o backend, o modelo de dados e os fluxos de ingestão em Apache NiFi da plataforma de busca interna da 4V, que reúne dados e arquivos de várias fontes em um único banco pesquisável.
 
-      - Aprendi Python no próprio projeto e construí um novo backend em FastAPI para a DuPont. Modelei o banco de dados e o conectei ao sistema RAG do cliente.
+      - Aprendi Python no projeto e construí para a DuPont um backend em FastAPI conectado ao sistema RAG do cliente.
 
-      - Implementei controle de permissões por documento na busca RAG da DuPont com base em dados do SharePoint e da identidade do Azure, para que cada usuário veja só o que pode acessar.
+      - Implementei permissões por documento na busca RAG da DuPont com SharePoint e identidade do Azure.
 
       - Estendi uma API Node.js sobre o MarkLogic e mantive fluxos NiFi que consolidam bancos de clientes.
 
@@ -86,11 +86,11 @@ work-experiences:
       month: 4
     location: São Paulo, Brasil
     description: >
-      - Fui o único engenheiro backend da empresa e construí tudo o que sustentava o app, a plataforma de eventos, o matchmaking e as ferramentas administrativas.
+      - Como único engenheiro backend, construí o backend do app, dos eventos, do matchmaking e do painel admin.
 
       - Cuidei do banco MongoDB, incluindo locks em nível de aplicação para operações concorrentes.
 
-      - Integrei plataformas como Sympla e SendGrid (Twilio) via webhooks e sincronizações bidirecionais. Também criei dashboards de estatísticas a pedido do time de marketing.
+      - Integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais. Também criei dashboards de estatísticas a pedido do time de marketing.
 
       - Criei um agendador de reuniões em que os convidados aceitavam, recusavam ou sugeriam outro horário só respondendo ao e-mail. As respostas eram capturadas com AWS SES e S3 e repassadas.
 
@@ -125,14 +125,15 @@ certifications: []
 skills:
   integrations:
     - APIs REST
-    - webhooks
+    - Webhooks
     - SSO
     - SharePoint
-    - SendGrid (Twilio)
+    - Twilio SendGrid
     - Sympla
-    - sistemas RAG
+    - Sistemas RAG
   practices:
-    - design de sistemas
-    - code review
-    - mentoria
+    - Design de sistemas
+    - Code review
+    - CI/CD
+    - Mentoria
     - Git

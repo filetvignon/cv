@@ -13,6 +13,8 @@
 
 // To learn about theming, see https://github.com/tsnobip/typst-typographic-resume?tab=readme-ov-file#theme
 // make sure you have installed the fonts you want to use
+#set page(paper: paper)
+
 #show: resume.with(
   theme: (
     // margin: 26pt,

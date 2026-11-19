@@ -19,14 +19,14 @@
 #set document(..doc-meta)
 #set text(lang: lang)
 
-#set page(paper: "a4", margin: (x: 1.6cm, y: 1.1cm))
+#set page(paper: paper, margin: (x: 1.6cm, y: 1cm))
 #set text(font: ("Inter", "Verdana", "DejaVu Sans"), size: 9.5pt)
 #set par(leading: 0.55em, justify: false)
-#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.45em)
+#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.4em)
 #show "third-party": it => box(it)
 
 #let section(title) = {
-  v(0.5em)
+  v(0.4em)
   text(size: 10pt, weight: "bold", fill: accent, tracking: 0.08em, upper(title))
   v(-0.55em)
   line(length: 100%, stroke: 0.6pt + accent.lighten(60%))
@@ -36,8 +36,7 @@
 #let dated-line(left, dates) = grid(
   columns: (1fr, auto),
   column-gutter: 1em,
-  left,
-  text(fill: muted, size: 9pt, dates),
+  left, text(fill: muted, size: 9pt, dates),
 )
 
 #let timeframe(item) = display-timeframe(

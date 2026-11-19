@@ -18,7 +18,7 @@
 )
 
 #show heading: set block(breakable: false)
-#set page(header: none, footer: none)
+#set page(paper: paper, header: none, footer: none)
 #show regex("\$?C\s*\/\s*C\+\+\$?"): "C / C++"
 #show regex("\$?HTML\s*\/\s*CSS\$?"): "HTML / CSS"
 #show regex("\$?CI\s*\/\s*CD\$?"): "CI / CD"

@@ -122,8 +122,8 @@ certifications: []
 
 skills:
   practices:
-    - System design
-    - Code review
+    - System Design
+    - Code Review
     - CI/CD
     - Docker
     - Git

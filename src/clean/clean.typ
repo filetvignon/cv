@@ -19,11 +19,11 @@
 #set document(..doc-meta)
 #set text(lang: lang)
 
-#set page(paper: paper, margin: (x: 1.3cm, top: 1.1cm, bottom: 0.9cm))
+#set page(paper: paper, margin: (x: 1.3cm, top: 1cm, bottom: 0.9cm))
 #set text(font: ("Inter", "Verdana", "DejaVu Sans"), size: 10pt)
 #set par(leading: 0.45em, justify: false)
 // Lines inside a bullet sit closer together than separate bullets
-#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.7em)
+#set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.65em)
 #show "third-party": it => box(it)
 
 #let section(title) = {
@@ -106,9 +106,10 @@
 #section(headers.education)
 // Compact entries, with a little more room between schools than within one
 #{
-  set block(spacing: 0.35em)
+  set block(spacing: 0.65em)
+  v(0.3em)
   for (i, item) in cv-data.education.enumerate() {
-    if i > 0 { v(0.35em) }
+    if i > 0 { v(0.3em) }
     dated-line([*#item.institution* – #item.title], timeframe(item))
     markup(item.at("description", default: ""))
   }

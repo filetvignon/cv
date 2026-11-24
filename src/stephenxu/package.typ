@@ -137,7 +137,9 @@
   start-date: "",
   end-date: "",
 ) = {
-  if start-date == "" {
+  if start-date in ("", none) and end-date in ("", none) {
+    ""
+  } else if start-date in ("", none) {
     end-date
   } else {
     start-date + " " + sym.dash.em + " " + end-date

@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=../cv-data.schema.json
-
 # Personal information
 profile:
   first-name: Felipe
@@ -42,30 +40,30 @@ work-experiences:
     location: USA
     remote: true
     description: >
-      - Designed and built the backend, data model, and Apache NiFi ingestion flows for 4V's in-house search platform, which pulls data and files from many sources into one searchable database.
+      - Designed and built the backend, data model, and NiFi ETL flows of 4V's in-house search platform, which pulled data from many sources into one searchable database, and extended its React frontend.
 
       - Learned Python on the job and built DuPont a new FastAPI backend connected to their RAG system.
 
-      - Added per-document permission checks to DuPont's RAG search using SharePoint and Azure identity.
+      - Added per-document permission checks to DuPont's RAG search (SharePoint, Microsoft Entra ID).
 
-      - Extended a Node.js API on top of MarkLogic and maintained NiFi flows that consolidate client databases.
+      - Extended a Node.js API on top of MarkLogic and maintained NiFi flows that consolidated client documents and databases from multiple sources.
 
-  # Mar 2022 - Oct 2022 (Twiage, PowerSchool, 100 Open Startups return) intentionally left off
-  # the resume. Previous descriptions are in git history (branch main).
+  # PowerSchool and Twiage (2022) intentionally left off the resume. The May-Sep 2022 return to
+  # 100 Open Startups is listed under that entry (extra-periods).
 
   - organization: ACT Digital
     client: Sodexo
     title: Tech Lead (promoted from Senior Backend Developer)
-    timeframe: April 2020 - February 2022
+    timeframe: August 2020 - February 2022
     start-date:
       year: 2020
-      month: 4
+      month: 8
     end-date:
       year: 2022
       month: 2
     location: São Paulo, Brazil
     description: >
-      - Took over technical leadership when the project lost its architect, and was later promoted to Tech Lead. Ran 1:1s and feedback for the backend, frontend, and QA teams and reported progress to the PO and leadership.
+      - Took over technical leadership when the project lost its architect and was promoted to Tech Lead. Ran 1:1s and feedback for backend, frontend, and QA teams and reported progress to the PO and leadership.
 
       - Led the integration redesign requested by Sodexo's headquarters in France. Wrote the system designs and coordinated the changes with frontend, backend, QA, product, and teams in other countries.
 
@@ -75,45 +73,38 @@ work-experiences:
 
   - organization: 100 Open Startups
     title: Backend Developer
-    timeframe: September 2016 - April 2020
+    timeframe: September 2016 - August 2020, April 2022 - September 2022
     start-date:
       year: 2016
       month: 9
     end-date:
       year: 2020
-      month: 4
+      month: 8
+    extra-periods: # rejoined in 2022
+      - start-date:
+          year: 2022
+          month: 4
+        end-date:
+          year: 2022
+          month: 9
     location: São Paulo, Brazil
     description: >
-      - As the only backend engineer, built the backend for the app, events platform, matchmaking, and admin.
+      - As the main backend engineer, built everything behind the app, events, matchmaking, and admin tools.
 
-      - Owned the MongoDB database, including application-level locks for concurrent operations.
+      - Designed and maintained the MongoDB database, including application-level locks for concurrency.
 
       - Integrated third-party platforms such as Sympla and Twilio SendGrid through webhooks and two-way data syncs, and built stats dashboards for the marketing team.
 
-      - Created an email-based meeting scheduler where invitees could accept, decline, or suggest a new time just by replying. Replies were captured with AWS SES and S3 and forwarded to the other person.
+      - Created a meeting scheduler: invitees replied by email to accept, decline, or reschedule (SES, S3, SNS).
 
 education:
   - institution: University of São Paulo (USP)
     location: São Paulo, Brazil
-    timeframe: "February 2010 - December 2017"
-    start-date:
-      year: 2010
-      month: 2
-    end-date:
-      year: 2017
-      month: 12
-    title: Coursework toward a Bachelor's in Electrical Engineering
+    title: Completed 3+ years toward a Bachelor's in Electrical Engineering
     description: >
       - Selected for the USP–École des Mines de Nancy double-degree program.
   - institution: University of Toronto
     location: Toronto, Canada
-    timeframe: "January 2013 - December 2013"
-    start-date:
-      year: 2013
-      month: 1
-    end-date:
-      year: 2013
-      month: 12
     title: Exchange Program, Electrical and Computer Engineering
     description: ""
 
@@ -124,6 +115,7 @@ skills:
   practices:
     - System Design
     - Code Review
+    - ETL
     - CI/CD
     - Docker
     - Git

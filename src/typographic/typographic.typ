@@ -119,9 +119,10 @@
       } else {
         ()
       }
-      // "client" is only used by the clean template; work-entry doesn't accept it
+      // "client" and "extra-periods" are only used by the clean template; work-entry doesn't accept them
       let work = work
       let _ = work.remove("client", default: none)
+      let _ = work.remove("extra-periods", default: none)
       work-entry(
         theme: theme,
         ..work,

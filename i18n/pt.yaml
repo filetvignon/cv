@@ -8,14 +8,14 @@ headers:
   languages: Idiomas
   interests: Interesses
   work-experiences: Experiência Profissional
-  education: Educação
+  education: Formação Acadêmica
   skills: Habilidades Técnicas
   bio: Resumo Profissional
   certifications: Certificações
 
 tags:
   remote: Remoto
-  client: cliente
+  client: Cliente
   present: Presente
 
 skills:

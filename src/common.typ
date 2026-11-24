@@ -113,7 +113,7 @@
 }
 
 #let doc-meta = (
-  title: full-name + " – " + translate("document-title"),
+  title: full-name + " \u{2013} " + translate("document-title"),
   author: full-name,
   description: cv-data.profile.at(
     "headline",
@@ -129,6 +129,10 @@
 
 
 #let to-datetime(date) = {
+  // Missing dates (e.g. education entries without dates) stay missing
+  if date == none or date == "" {
+    return none
+  }
   if type(date) == datetime {
     return date
   }
@@ -159,6 +163,9 @@
 
 #let display-datetime(date, pattern: "MMM yyyy", language: lang) = {
   let dt = to-datetime(date)
+  if dt == none {
+    return none
+  }
   return custom-date-format(dt, pattern: pattern, lang: language)
 }
 

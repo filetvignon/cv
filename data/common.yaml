@@ -89,12 +89,12 @@ skills:
   databases:
     - MongoDB
     - MarkLogic
-    - Azure CosmosDB
+    - Azure Cosmos DB
     - MySQL
     - SQL
   cloud-data:
     - "Azure (App Services, Functions, Service Bus)"
-    - "AWS (EC2, S3, SES, SQS)"
+    - "AWS (EC2, S3, SES, SNS, SQS)"
     - Apache NiFi
   integrations:
     - REST APIs

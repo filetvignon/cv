@@ -25,6 +25,8 @@
 // Lines inside a bullet sit closer together than separate bullets
 #set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.65em)
 #show "third-party": it => box(it)
+// Straight quotes/apostrophes: safer for ATS keyword matching and copy-paste
+#set smartquote(enabled: false)
 
 #let section(title) = {
   v(0.5em)
@@ -40,11 +42,15 @@
   left, text(fill: muted, size: 9pt, dates),
 )
 
-#let timeframe(item) = display-timeframe(
-  start-date: item.at("start-date", default: none),
-  end-date: item.at("end-date", default: none),
+#let one-period(p) = display-timeframe(
+  start-date: p.at("start-date", default: none),
+  end-date: p.at("end-date", default: none),
   pattern: "MMM yyyy",
 )
+// Main period plus any `extra-periods` (e.g. rejoining the same company), comma-separated
+#let timeframe(item) = (
+  (one-period(item),) + item.at("extra-periods", default: ()).map(one-period)
+).join(", ")
 
 #let markup(s) = if s == none or s.trim() == "" { none } else { eval(s, mode: "markup") }
 
@@ -70,7 +76,7 @@
 
 // ---------- Summary ----------
 #section(headers.bio)
-#profile.bio
+#markup(profile.bio)
 
 // ---------- Experience ----------
 #section(headers.work-experiences)
@@ -110,7 +116,7 @@
   v(0.3em)
   for (i, item) in cv-data.education.enumerate() {
     if i > 0 { v(0.3em) }
-    dated-line([*#item.institution* – #item.title], timeframe(item))
+    dated-line([*#item.institution* -- #markup(item.title)], timeframe(item))
     markup(item.at("description", default: ""))
   }
 }
@@ -119,6 +125,6 @@
 #if cv-data.at("certifications", default: ()).len() > 0 {
   section(headers.certifications)
   for item in cv-data.certifications {
-    dated-line([*#item.institution* – #item.title], timeframe(item))
+    dated-line([*#item.institution* -- #item.title], timeframe(item))
   }
 }

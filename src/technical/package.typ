@@ -215,14 +215,18 @@
 #let education-heading(institution, location, degree, major, start-date, end-date, body) = {
   // sanity checks
 
-  assert(type(start-date) == datetime or type(start-date) == str)
-  assert(type(end-date) == datetime or type(end-date) == str)
+  // Dates are optional for education entries
+  let has-dates = start-date != none
+  if has-dates {
+    assert(type(start-date) == datetime or type(start-date) == str)
+    assert(type(end-date) == datetime or type(end-date) == str)
+  }
 
   generic_2x2(
     (70%, 30%),
     [*#institution*],
-    [*#period_worked(start-date, end-date)*],
-    [#degree, #major],
+    if has-dates [*#period_worked(start-date, end-date)*] else [],
+    if major in (none, "") [#degree] else [#degree, #major],
     emph(location),
   )
   v(-0.2em)

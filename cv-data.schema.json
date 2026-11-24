@@ -200,6 +200,21 @@
           "remote": {
             "type": "boolean",
             "description": "Whether the work experience was remote or not"
+          },
+          "extra-periods": {
+            "type": "array",
+            "description": "Additional periods at the same organization (e.g. rejoining later). Shown after the main dates by templates that support it.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "start-date": {
+                  "$ref": "#/$defs/datetime"
+                },
+                "end-date": {
+                  "$ref": "#/$defs/datetime"
+                }
+              }
+            }
           }
         }
       }

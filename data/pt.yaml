@@ -1,12 +1,10 @@
-# yaml-language-server: $schema=../cv-data.schema.json
-
 # Informações pessoais
 profile:
   first-name: Felipe
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos remotos para clientes dos EUA. Construí sozinho o backend de uma startup e depois, como Tech Lead para a Sodexo, liderei o redesenho de integrações e a implantação de SSO.
+    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos de trabalho remoto para clientes dos EUA. Construí o backend de uma startup e depois, como Tech Lead para a Sodexo, liderei a reestruturação de integrações e a implementação de SSO.
   titles:
     - Engenheiro de Software
   headline: "Engenheiro de Software | Node.js, TypeScript e Python · Integrações e Projetos com Clientes"
@@ -42,78 +40,71 @@ work-experiences:
     location: EUA
     remote: true
     description: >
-      - Projetei e construí o backend, o modelo de dados e os fluxos de ingestão em Apache NiFi da plataforma de busca interna da 4V, que reúne dados e arquivos de várias fontes em um único banco pesquisável.
+      - Projetei e construí o backend, o modelo de dados e os fluxos de ETL em NiFi da plataforma de busca interna, que reunia dados de várias fontes em uma única base pesquisável, e evoluí o frontend em React.
 
-      - Aprendi Python no projeto e construí para a DuPont um backend em FastAPI conectado ao RAG do cliente.
+      - Aprendi Python no projeto e construí um backend em FastAPI conectado a um sistema RAG para a DuPont.
 
-      - Implementei permissões por documento na busca RAG da DuPont com SharePoint e identidade do Azure.
+      - Implementei permissões de documentos na busca RAG da DuPont (SharePoint, Microsoft Entra ID).
 
-      - Estendi uma API Node.js sobre o MarkLogic e mantive fluxos NiFi que consolidam bancos de clientes.
+      - Expandi uma API Node.js integrada ao MarkLogic e fiz a manutenção de fluxos NiFi que consolidavam documentos e bancos de dados de diversas fontes.
 
-  # Mar 2022 - Out 2022 (Twiage, PowerSchool, retorno à 100 Open Startups) fora do currículo
-  # de propósito. As descrições anteriores estão no histórico do git (branch main).
+  # PowerSchool e Twiage (2022) fora do currículo de propósito. O retorno à 100 Open Startups
+  # (mai-set 2022) aparece na própria entrada (extra-periods).
 
   - organization: ACT Digital
     client: Sodexo
     title: Tech Lead (promovido de Desenvolvedor Backend Sênior)
-    timeframe: Abril de 2020 - Fevereiro de 2022
+    timeframe: Agosto de 2020 - Fevereiro de 2022
     start-date:
       year: 2020
-      month: 4
+      month: 8
     end-date:
       year: 2022
       month: 2
     location: São Paulo, Brasil
     description: >
-      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e depois fui promovido a Tech Lead. Conduzi 1:1s e feedbacks de backend, frontend e QA e reportei o andamento ao PO e à liderança.
+      - Assumi a liderança técnica quando o projeto perdeu o arquiteto e fui promovido a Tech Lead. Conduzi 1:1s e feedbacks com os times de backend, frontend e QA e reportei o andamento ao PO e à liderança.
 
-      - Liderei o redesenho das integrações pedido pela matriz da Sodexo na França. Elaborei a arquitetura e coordenei as mudanças com frontend, backend, QA, produto e times de outros países.
+      - Liderei a reestruturação de integrações pedida pela matriz da Sodexo na França. Elaborei a arquitetura e coordenei as mudanças com frontend, backend, QA, produto e times de outros países.
 
-      - Fui responsável pela implantação do SSO corporativo da Sodexo. Levantei os requisitos com o cliente, dividi o trabalho entre os times e acompanhei a configuração com a infraestrutura da Sodexo.
+      - Fui responsável pela implementação do SSO corporativo da Sodexo. Levantei os requisitos com o cliente, dividi o trabalho entre os times e acompanhei a configuração com a infraestrutura da Sodexo.
 
-      - Desenvolvi microsserviços Node.js/TypeScript no Azure que integravam bancos e sistemas de pagamento da América Latina, e defini as convenções de código do time, aplicadas com linters, formatadores e Git hooks.
+      - Desenvolvi microsserviços Node.js/TypeScript na Azure que integravam bancos de dados e sistemas de pagamento da América Latina e defini as convenções de código usando linters, formatadores e Git hooks.
 
   - organization: 100 Open Startups
     title: Desenvolvedor Backend
-    timeframe: Setembro de 2016 - Abril de 2020
+    timeframe: Setembro de 2016 - Agosto de 2020, Abril de 2022 - Setembro de 2022
     start-date:
       year: 2016
       month: 9
     end-date:
       year: 2020
-      month: 4
+      month: 8
+    extra-periods: # rejoined in 2022
+      - start-date:
+          year: 2022
+          month: 4
+        end-date:
+          year: 2022
+          month: 9
     location: São Paulo, Brasil
     description: >
-      - Como único engenheiro backend, construí o backend do app, eventos, matchmaking e painel admin.
+      - Fui o principal engenheiro backend e desenvolvi as APIs e os serviços do app, da plataforma de eventos, do matchmaking e do painel admin.
 
-      - Cuidei do banco MongoDB, incluindo locks em nível de aplicação para operações concorrentes.
+      - Projetei e mantive o banco em MongoDB, incluindo locks em nível de aplicação para operações concorrentes.
 
-      - Integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais, e criei dashboards de estatísticas para o time de marketing.
+      - Criei dashboards de estatísticas para o time de marketing e integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais.
 
-      - Criei um agendador de reuniões em que os convidados aceitavam, recusavam ou sugeriam outro horário só respondendo ao e-mail. As respostas eram capturadas com AWS SES e S3 e repassadas.
+      - Desenvolvi um agendador de reuniões no qual convidados aceitavam, recusavam ou remarcavam respondendo ao e-mail (AWS SES, S3, SNS).
 
 education:
   - institution: Universidade de São Paulo (USP)
     location: São Paulo, Brasil
-    timeframe: "Fevereiro de 2010 - Dezembro de 2017"
-    start-date:
-      year: 2010
-      month: 2
-    end-date:
-      year: 2017
-      month: 12
-    title: Graduação em Engenharia Elétrica (incompleta)
+    title: Engenharia Elétrica, mais de 3 anos cursados (graduação incompleta)
     description: >
       - Aprovado no processo seletivo do duplo diploma USP–École des Mines de Nancy.
   - institution: University of Toronto
     location: Toronto, Canadá
-    timeframe: "Janeiro de 2013 - Dezembro de 2013"
-    start-date:
-      year: 2013
-      month: 1
-    end-date:
-      year: 2013
-      month: 12
     title: Intercâmbio em Engenharia Elétrica e de Computação
     description: ""
 
@@ -132,6 +123,7 @@ skills:
   practices:
     - Design de Sistemas
     - Code Review
+    - ETL
     - CI/CD
     - Docker
     - Git

@@ -62,8 +62,10 @@
       to-datetime(education.at("start-date", default: none)), // start-date
       if "end-date" in education {
         to-datetime(education.at("end-date"))
-      } else {
+      } else if "start-date" in education {
         translate("tags.present")
+      } else {
+        none
       }, // end-date
       cmarker.render(education.description),
     )

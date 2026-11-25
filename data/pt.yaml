@@ -4,7 +4,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos de trabalho remoto para clientes dos EUA. Construí o backend de uma startup e depois, como Tech Lead para a Sodexo, liderei a reestruturação de integrações e a implementação de SSO.
+    Engenheiro de software com 10 anos de experiência em APIs, pipelines de dados e integrações com terceiros em Node.js/TypeScript e Python, incluindo mais de 3 anos de trabalho remoto para clientes dos EUA. Construí o backend de uma startup e depois, como Tech Lead para a Sodexo, liderei a reestruturação de integrações e a implementação de SSO. Trabalhei com times nos EUA, na Europa, na América Latina e na Ásia.
   titles:
     - Engenheiro de Software
   headline: "Engenheiro de Software | Node.js, TypeScript e Python · Integrações e Projetos com Clientes"
@@ -40,13 +40,13 @@ work-experiences:
     location: EUA
     remote: true
     description: >
-      - Projetei e construí o backend, o modelo de dados e os fluxos de ETL em NiFi da plataforma de busca interna, que reunia dados de várias fontes em uma única base pesquisável, e evoluí o frontend em React.
+      - Projetei e construí o backend em Node.js e o modelo de dados em MarkLogic da plataforma de busca da 4V, que unificava dados de várias fontes, evoluí seus fluxos de ETL em NiFi e o frontend em React e escrevi os Dockerfiles de todos os componentes.
 
-      - Aprendi Python no projeto e construí um backend em FastAPI conectado a um sistema RAG para a DuPont.
+      - Aprendi Python no projeto e construí do zero um backend em FastAPI para a DuPont: modelei o banco de dados e o integrei ao sistema RAG e às Azure Functions.
 
       - Implementei permissões de documentos na busca RAG da DuPont (SharePoint, Microsoft Entra ID).
 
-      - Expandi uma API Node.js integrada ao MarkLogic e fiz a manutenção de fluxos NiFi que consolidavam documentos e bancos de dados de diversas fontes.
+      - Escrevi testes (pytest, Vitest), expandi o CI no GitHub Actions e atualizei runtimes e dependências.
 
   # PowerSchool e Twiage (2022) fora do currículo de propósito. O retorno à 100 Open Startups
   # (mai-set 2022) aparece na própria entrada (extra-periods).
@@ -67,12 +67,12 @@ work-experiences:
 
       - Liderei a reestruturação de integrações pedida pela matriz da Sodexo na França. Elaborei a arquitetura e coordenei as mudanças com frontend, backend, QA, produto e times de outros países.
 
-      - Fui responsável pela implementação do SSO corporativo da Sodexo. Levantei os requisitos com o cliente, dividi o trabalho entre os times e acompanhei a configuração com a infraestrutura da Sodexo.
+      - Fui responsável pelo SSO corporativo da Sodexo (OpenID Connect). Levantei os requisitos com o cliente, dividi o trabalho entre os times e acompanhei a configuração com a equipe de infraestrutura.
 
-      - Desenvolvi microsserviços Node.js/TypeScript na Azure que integravam bancos de dados e sistemas de pagamento da América Latina e defini as convenções de código usando linters, formatadores e Git hooks.
+      - Desenvolvi microsserviços Node.js/TypeScript na Azure que integravam bancos de dados e sistemas de pagamento da América Latina, acelerei os builds de Docker em 5x e defini as convenções de código usando linters e Git hooks.
 
   - organization: 100 Open Startups
-    title: Desenvolvedor Backend
+    title: Desenvolvedor Backend · Tech Lead (2022)
     timeframe: Setembro de 2016 - Agosto de 2020, Abril de 2022 - Setembro de 2022
     start-date:
       year: 2016
@@ -91,11 +91,11 @@ work-experiences:
     description: >
       - Fui o principal engenheiro backend e desenvolvi as APIs e os serviços do app, da plataforma de eventos, do matchmaking e do painel admin.
 
-      - Projetei e mantive o banco em MongoDB, incluindo locks em nível de aplicação para operações concorrentes.
+      - Projetei e mantive o banco em MongoDB e configurei o Redis para cache e sessões de usuário.
 
-      - Criei dashboards de estatísticas para o time de marketing e integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais.
+      - Integrei plataformas como Sympla e Twilio SendGrid via webhooks e sincronizações bidirecionais.
 
-      - Desenvolvi um agendador de reuniões no qual convidados aceitavam, recusavam ou remarcavam respondendo ao e-mail (AWS SES, S3, SNS).
+      - Criei um agendador de reuniões com aceite, recusa e remarcação por e-mail (SES, S3, SNS).
 
 education:
   - institution: Universidade de São Paulo (USP)
@@ -116,6 +116,7 @@ skills:
     - APIs REST
     - Webhooks
     - SSO
+    - OIDC
     - SharePoint
     - Twilio SendGrid
     - Sympla
@@ -124,7 +125,9 @@ skills:
     - Design de Sistemas
     - Code Review
     - ETL
-    - CI/CD
     - Docker
     - Git
+    - Bash
+    - Linux
+    - SSH
     - Mentoria

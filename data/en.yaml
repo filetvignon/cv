@@ -4,7 +4,7 @@ profile:
   last-name: Vignon
   pfp: "./images/pfp.jpeg"
   bio: >
-    Software engineer with 10 years of experience building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including 3+ years working remotely with US clients. Built a startup's backend as its only backend engineer, then led an integration redesign and SSO rollout as Tech Lead for Sodexo.
+    Software engineer with 10 years building APIs, data pipelines, and third-party integrations in Node.js/TypeScript and Python, including 3+ years working remotely with US clients and global engineering teams. Built a startup's backend as its main backend engineer, then led an integration redesign and SSO rollout as Tech Lead for Sodexo.
   titles:
     - Software Engineer
   headline: "Software Engineer | Node.js, TypeScript & Python · Integrations & Client Projects"
@@ -40,13 +40,13 @@ work-experiences:
     location: USA
     remote: true
     description: >
-      - Designed and built the backend, data model, and NiFi ETL flows of 4V's in-house search platform, which pulled data from many sources into one searchable database, and extended its React frontend.
+      - Designed and built the Node.js backend and MarkLogic data model of 4V's search platform, which unified data from many sources, extended its NiFi ETL flows and React frontend, and wrote all its Dockerfiles.
 
-      - Learned Python on the job and built DuPont a new FastAPI backend connected to their RAG system.
+      - Learned Python on the job and built DuPont a new FastAPI backend from scratch, modeling its database and integrating it with their RAG system and Azure Functions.
 
       - Added per-document permission checks to DuPont's RAG search (SharePoint, Microsoft Entra ID).
 
-      - Extended a Node.js API on top of MarkLogic and maintained NiFi flows that consolidated client documents and databases from multiple sources.
+      - Wrote unit tests (pytest, Vitest), extended GitHub Actions CI, and upgraded runtimes and dependencies.
 
   # PowerSchool and Twiage (2022) intentionally left off the resume. The May-Sep 2022 return to
   # 100 Open Startups is listed under that entry (extra-periods).
@@ -67,12 +67,12 @@ work-experiences:
 
       - Led the integration redesign requested by Sodexo's headquarters in France. Wrote the system designs and coordinated the changes with frontend, backend, QA, product, and teams in other countries.
 
-      - Owned the rollout of Sodexo's corporate SSO. Gathered requirements with the client, split the work across teams, and worked with Sodexo's infrastructure team on the setup.
+      - Owned the rollout of Sodexo's corporate SSO (OpenID Connect). Gathered requirements with the client, split the work across teams, and worked with Sodexo's infrastructure team on the setup.
 
-      - Developed Node.js/TypeScript microservices on Azure integrating databases and payment systems across Latin America, and defined the team's code conventions, enforced with linters, formatters, and Git hooks.
+      - Developed Node.js/TypeScript microservices on Azure integrating databases and payment systems across Latin America, made Docker builds 5x faster, and set code conventions enforced by linters and Git hooks.
 
   - organization: 100 Open Startups
-    title: Backend Developer
+    title: Backend Developer · Tech Lead (2022)
     timeframe: September 2016 - August 2020, April 2022 - September 2022
     start-date:
       year: 2016
@@ -91,9 +91,9 @@ work-experiences:
     description: >
       - As the main backend engineer, built everything behind the app, events, matchmaking, and admin tools.
 
-      - Designed and maintained the MongoDB database, including application-level locks for concurrency.
+      - Designed and maintained the MongoDB database and set up Redis for caching and user sessions.
 
-      - Integrated third-party platforms such as Sympla and Twilio SendGrid through webhooks and two-way data syncs, and built stats dashboards for the marketing team.
+      - Integrated Sympla, Twilio SendGrid, and other platforms through webhooks and two-way data syncs.
 
       - Created a meeting scheduler: invitees replied by email to accept, decline, or reschedule (SES, S3, SNS).
 
@@ -116,7 +116,9 @@ skills:
     - System Design
     - Code Review
     - ETL
-    - CI/CD
     - Docker
     - Git
+    - Bash
+    - Linux
+    - SSH
     - Mentoring

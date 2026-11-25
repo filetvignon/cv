@@ -86,8 +86,10 @@ skills:
     - Python
     - FastAPI
     - React
+    - Flutter
   databases:
     - MongoDB
+    - Redis
     - MarkLogic
     - Azure Cosmos DB
     - MySQL
@@ -100,7 +102,16 @@ skills:
     - REST APIs
     - Webhooks
     - SSO
+    - OIDC
     - SharePoint
     - Twilio SendGrid
     - Sympla
     - RAG systems
+  testing-ci:
+    - Jest
+    - Vitest
+    - Mocha
+    - Chai
+    - pytest
+    - GitLab CI
+    - GitHub Actions

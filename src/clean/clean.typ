@@ -25,15 +25,16 @@
 // Lines inside a bullet sit closer together than separate bullets
 #set list(indent: 0.6em, body-indent: 0.5em, spacing: 0.65em)
 #show "third-party": it => box(it)
+#show "Node.js/TypeScript": it => box(it)
 // Straight quotes/apostrophes: safer for ATS keyword matching and copy-paste
 #set smartquote(enabled: false)
 
 #let section(title) = {
-  v(0.5em)
+  v(0.3em)
   text(size: 10.5pt, weight: "bold", fill: accent, tracking: 0.08em, upper(title))
   v(-0.55em)
   line(length: 100%, stroke: 0.6pt + accent.lighten(60%))
-  v(0.15em)
+  v(0.05em)
 }
 
 #let dated-line(left, dates) = grid(
@@ -80,8 +81,9 @@
 
 // ---------- Experience ----------
 #section(headers.work-experiences)
-#for item in cv-data.work-experiences {
-  v(0.3em)
+// Extra room between jobs, but not above the first one (keeps every header's gap below it equal)
+#for (i, item) in cv-data.work-experiences.enumerate() {
+  if i > 0 { v(0.3em) }
   dated-line(text(weight: "bold", item.title), timeframe(item))
   v(-0.35em)
   let org = item.organization
@@ -96,7 +98,7 @@
 // ---------- Skills ----------
 #section(headers.skills)
 #{
-  set par(leading: 0.5em)
+  set par(leading: 0.7em)
   let lines = ()
   for (key, values) in cv-data.skills {
     lines.push([*#skills_translations.at(key, default: key):* #values.join(", ")])
@@ -113,7 +115,9 @@
 // Compact entries, with a little more room between schools than within one
 #{
   set block(spacing: 0.65em)
-  v(0.3em)
+  // The tighter block spacing above shrinks the gap under the header; this brings it back in line
+  // with the other sections (which use the default 1.2em)
+  v(0.55em)
   for (i, item) in cv-data.education.enumerate() {
     if i > 0 { v(0.3em) }
     dated-line([*#item.institution* -- #markup(item.title)], timeframe(item))
